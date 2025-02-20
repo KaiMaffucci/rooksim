@@ -22,6 +22,8 @@ card examples: R12, G7, Y5, B14
 deck const?
 
 make sure to output stuff to file
+
+calculate how many holes are in a hand -> part of bidding
 """
 
 # game class
