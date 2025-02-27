@@ -114,7 +114,7 @@ class Game:
     def all_bid(self):
         
         # bid loop until all players have passed
-        while self.p1.passing == False or self.p2.passing == False or self.p3.passing == False or self.p4.passing == False:
+        while not (self.p1.passing and self.p2.passing and self.p3.passing and self.p4.passing):
             # player 1 bids
             self.p1.bid()
             # player 2 bids
@@ -126,8 +126,6 @@ class Game:
         
         # determine the winning bid
         self.winning_bid = max(self.p1.current_bid, self.p2.current_bid, self.p3.current_bid, self.p4.current_bid)
-
-        # TODO: determine the trump suit
 
         # TODO: need method(?) for nest setup, before round starts
 
@@ -181,7 +179,7 @@ class Player:
     def __init__(self):
 
         self.partner = 0        # partner undeclared
-        self.max_bid = 0        # no max bid (maximum amount the player is willing to bid) declared yet
+        self.max_bid = 35        # no max bid (maximum amount the player is willing to bid) declared yet
         self.current_bid = 0    # no bid started yet
         self.pref_trump = ''    # no preferred trump suit declared yet
         self.score = 0          # everyone starts at 0 points
@@ -243,13 +241,6 @@ class Player:
             elif black_total >= red_total and black_total >= green_total and black_total >= yellow_total:
                 self.pref_trump = 'B'
 
-    #def calculate_max_bid(self):
-        # calculate the maximum bid the player is willing to make
-        # based on the number of points in the player's hand
-        # and the number of points needed to win the round
-        # each character will have a unique way of doing it: this method will be overridden
-    #    pass
-
     # player methods for playing the game
     def bid(self):
         
@@ -259,8 +250,10 @@ class Player:
             self.calculate_max_bid()
             self.current_bid = 70
         else:
-            if self.current_bid + 5 <= self.max_bid:
+            if self.current_bid + 5 <= self.max_bid and self.current_bid + 5 <= 120:
                 self.current_bid += 5
+            else:
+                self.passing = True
 
     # play the card in a trick
     # this method will also (likely) be overridden
@@ -278,7 +271,7 @@ class Karapet(Player):
         self.calc_trump()
 
         # determine number of 14s in hand and add 10 for each
-        self.max_bid = (self.hand.count('R14') + self.hand.count('G14') + self.hand.count('Y14') + self.hand.count('B14')) * 10
+        self.max_bid += (self.hand.count('R14') + self.hand.count('G14') + self.hand.count('Y14') + self.hand.count('B14')) * 10
         # determine the number of 11-13s in hand and add 5 for each
         self.max_bid += (self.hand.count('R11') + self.hand.count('G11') + self.hand.count('Y11') + self.hand.count('B11')) * 5
         self.max_bid += (self.hand.count('R12') + self.hand.count('G12') + self.hand.count('Y12') + self.hand.count('B12')) * 5
@@ -307,7 +300,7 @@ class Papa(Player):
         self.calc_trump()
 
         # determine number of 14s in hand and add 10 for each
-        self.max_bid = (self.hand.count('R14') + self.hand.count('G14') + self.hand.count('Y14') + self.hand.count('B14')) * 10
+        self.max_bid += (self.hand.count('R14') + self.hand.count('G14') + self.hand.count('Y14') + self.hand.count('B14')) * 10
         # determine the number of 11-13s in hand and add 5 for each
         self.max_bid += (self.hand.count('R11') + self.hand.count('G11') + self.hand.count('Y11') + self.hand.count('B11')) * 5
         self.max_bid += (self.hand.count('R12') + self.hand.count('G12') + self.hand.count('Y12') + self.hand.count('B12')) * 5
@@ -342,7 +335,7 @@ class HH(Player):
         self.calc_trump()
 
         # determine number of 14s in hand and add 10 for each
-        self.max_bid = (self.hand.count('R14') + self.hand.count('G14') + self.hand.count('Y14') + self.hand.count('B14')) * 10
+        self.max_bid += (self.hand.count('R14') + self.hand.count('G14') + self.hand.count('Y14') + self.hand.count('B14')) * 10
         # determine the number of 11-13s in hand and add 5 for each
         self.max_bid += (self.hand.count('R11') + self.hand.count('G11') + self.hand.count('Y11') + self.hand.count('B11')) * 5
         self.max_bid += (self.hand.count('R12') + self.hand.count('G12') + self.hand.count('Y12') + self.hand.count('B12')) * 5
@@ -374,15 +367,15 @@ class RR(Player):
         self.calc_trump()
 
         # determine number of 14s in hand and add 10 for each
-        self.max_bid = (self.hand.count('R14') + self.hand.count('G14') + self.hand.count('Y14') + self.hand.count('B14')) * 10
+        self.max_bid += (self.hand.count('R14') + self.hand.count('G14') + self.hand.count('Y14') + self.hand.count('B14')) * 10
         # determine the number of 11-13s in hand and add 5 for each
         self.max_bid += (self.hand.count('R11') + self.hand.count('G11') + self.hand.count('Y11') + self.hand.count('B11')) * 5
         self.max_bid += (self.hand.count('R12') + self.hand.count('G12') + self.hand.count('Y12') + self.hand.count('B12')) * 5
         self.max_bid += (self.hand.count('R13') + self.hand.count('G13') + self.hand.count('Y13') + self.hand.count('B13')) * 5
         # determine the number of 10s in hand and add 10 for each
         self.max_bid += (self.hand.count('R10') + self.hand.count('G10') + self.hand.count('Y10') + self.hand.count('B10')) * 10
-        # add a random number between 0 and 20 (RR is unpredictable)
-        self.max_bid += random.randint(0, 20)
+        # add a random multiple of 5 between 0 and 20 (RR is unpredictable)
+        self.max_bid += random.randint(0, 4) * 5
         # if RR has a rook, add 20
         if 'X' in self.hand:
             self.max_bid += 20
