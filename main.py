@@ -7,10 +7,14 @@ def main():
 
     # test code
     game.deal()
-    print(game.p1.hand)
-    print(game.p2.hand)
-    print(game.p3.hand)
-    print(game.p4.hand)
-    print(game.nest)
+
+    # testing each player's bidding strategy to make sure the numbers make sense
+
+    game.all_bid()
+    print(game.p1, game.p1.max_bid)
+    print(game.p2, game.p2.max_bid)
+    print(game.p3, game.p3.max_bid)
+    print(game.p4, game.p4.max_bid)
+
 
 main()
