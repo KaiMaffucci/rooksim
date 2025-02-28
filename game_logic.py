@@ -66,6 +66,7 @@ class Game:
         self.nest = [] # cards in the nest/kiddy
         self.current_trick = [] # cards in the current trick
         self.leading_suit = '' # suit of the first card played in a trick
+        self.bid_winner = 0     # player who won the bid
         self.leading_player = 0 # 1-4, which player will lead the next trick
         self.winning_bid = 0 # the highest bid made by a player
         self.trump = '' # the trump suit for the round
@@ -84,7 +85,7 @@ class Game:
             deck.append('G' + str(i))
             deck.append('Y' + str(i))
             deck.append('B' + str(i))
-        deck.append('X')
+        deck.append('XXX') # rook
 
         # shuffle deck
         random.shuffle(deck)
@@ -110,7 +111,6 @@ class Game:
         self.p4.partner = 2
 
     # make players bid
-    # TODO: fix infinite loop
     def all_bid(self):
         
         # bid loop until all players have passed
@@ -124,10 +124,41 @@ class Game:
             # player 4 bids
             self.p4.bid()
         
-        # determine the winning bid
+        # determine the winning bid and bidder
         self.winning_bid = max(self.p1.current_bid, self.p2.current_bid, self.p3.current_bid, self.p4.current_bid)
+        if self.p1.current_bid == self.winning_bid:
+            self.bid_winner = 1
+        elif self.p2.current_bid == self.winning_bid:
+            self.bid_winner = 2
+        elif self.p3.current_bid == self.winning_bid:
+            self.bid_winner = 3
+        elif self.p4.current_bid == self.winning_bid:
+            self.bid_winner = 4
+        else:
+            print("Error: no bid winner found") # should never run
 
-        # TODO: need method(?) for nest setup, before round starts
+    # TODO: need method(?) for nest setup, before round starts
+    def setup_nest(self):
+        
+        # whoever won the bid gets to take the nest (TODO: if a player gets the nest, they should also put 5 cards back)
+        # if the bid winner is 1, they get the nest
+        if self.bid_winner == 1:
+            self.p1.hand.extend(self.nest)
+        # if the bid winner is 2, they get the nest
+        elif self.bid_winner == 2:
+            self.p2.hand.extend(self.nest)
+        # if the bid winner is 3, they get the nest
+        elif self.bid_winner == 3:
+            self.p3.hand.extend(self.nest)
+        # if the bid winner is 4, they get the nest
+        elif self.bid_winner == 4:
+            self.p4.hand.extend(self.nest)
+        else:
+            print("Error: no bid winner found") # should never run
+        
+        # clear the nest
+        self.nest = []
+
 
     # play a single trick
     def play_trick(self):
@@ -141,6 +172,9 @@ class Game:
 
         # players bid
         self.all_bid()
+
+        # setup the nest
+        self.setup_nest()
 
         # play tricks until all players are out of cards
         while len(self.player1.hand) > 0:
@@ -280,9 +314,23 @@ class Karapet(Player):
         self.max_bid += (self.hand.count('R10') + self.hand.count('G10') + self.hand.count('Y10') + self.hand.count('B10')) * 10
         # we will NOT be adding any for any other tricks, because Karapet is cautious and will not bid high
         # if Karapet has a rook, add 20
-        if 'X' in self.hand:
+        if 'XXX' in self.hand:
             self.max_bid += 20
 
+    def choose_nest(self):
+
+        # Karapet will reserve the five lowest non-trump and non-5 cards for the nest
+        cards_for_nest = []
+        # find the lowest card 5 times, but skip over 5s and trump cards
+        for i in range(0, 5):
+            lowest = 'R15'
+            for card in self.hand:
+                if card[0] != self.pref_trump and card[1:] != '5' and card[1:] < lowest[1:]:
+                    lowest = card
+            cards_for_nest.append(lowest)
+            self.hand.remove(lowest)
+        return cards_for_nest
+        
     # play the card in a trick
     def card():
         pass
@@ -290,8 +338,6 @@ class Karapet(Player):
 
 # Papa Greek: moderate player, tries to be optimal but this often makes him unlucky
 class Papa(Player):
-
-    
 
     # calculate maximum bid
     # this player will bid moderately
@@ -307,17 +353,31 @@ class Papa(Player):
         self.max_bid += (self.hand.count('R13') + self.hand.count('G13') + self.hand.count('Y13') + self.hand.count('B13')) * 5
         # determine the number of 10s in hand and add 10 for each
         self.max_bid += (self.hand.count('R10') + self.hand.count('G10') + self.hand.count('Y10') + self.hand.count('B10')) * 10
-        # determine the number of 5-9s in hand, but save number because we will do math differently this time
-        num_5_9 = (self.hand.count('R5') + self.hand.count('G5') + self.hand.count('Y5') + self.hand.count('B5'))
-        num_5_9 += (self.hand.count('R6') + self.hand.count('G6') + self.hand.count('Y6') + self.hand.count('B6'))
-        num_5_9 += (self.hand.count('R7') + self.hand.count('G7') + self.hand.count('Y7') + self.hand.count('B7'))
-        num_5_9 += (self.hand.count('R8') + self.hand.count('G8') + self.hand.count('Y8') + self.hand.count('B8'))
-        num_5_9 += (self.hand.count('R9') + self.hand.count('G9') + self.hand.count('Y9') + self.hand.count('B9'))
-        # for every 2 5-9s, add 5
-        self.max_bid += (num_5_9 // 2) * 5
+        # determine the number of 5-9s of trump color in hand, but save number because we will do math differently this time
+        num_5_9_trump = 0
+        for card in self.hand:
+            if card[0] == self.pref_trump:
+                if int(card[1:]) >= 5 and int(card[1:]) <= 9:
+                    num_5_9_trump += 1
+        # for every 2 5-9s in trump, add 5
+        self.max_bid += (num_5_9_trump // 2) * 5
         # if Papa has a rook, add 20
-        if 'X' in self.hand:
+        if 'XXX' in self.hand:
             self.max_bid += 20
+
+    def choose_nest(self):
+
+        # Papa will put in lowest cards not in trump suit
+        cards_for_nest = []
+        # find the lowest card 5 times, but skip over trump cards
+        for i in range(0, 5):
+            lowest = 'R15'
+            for card in self.hand:
+                if card[0] != self.pref_trump and card[1:] < lowest[1:]:
+                    lowest = card
+            cards_for_nest.append(lowest)
+            self.hand.remove(lowest)
+        return cards_for_nest
 
     # play the card in a trick
     def card():
@@ -342,15 +402,35 @@ class HH(Player):
         self.max_bid += (self.hand.count('R13') + self.hand.count('G13') + self.hand.count('Y13') + self.hand.count('B13')) * 5
         # determine the number of 10s in hand and add 10 for each
         self.max_bid += (self.hand.count('R10') + self.hand.count('G10') + self.hand.count('Y10') + self.hand.count('B10')) * 10
-        # determine the number of 5-9s in hand and add 5 for each (HH is a narcissist and thinks he can win with anything)
-        self.max_bid += (self.hand.count('R5') + self.hand.count('G5') + self.hand.count('Y5') + self.hand.count('B5')) * 5
-        self.max_bid += (self.hand.count('R6') + self.hand.count('G6') + self.hand.count('Y6') + self.hand.count('B6')) * 5
-        self.max_bid += (self.hand.count('R7') + self.hand.count('G7') + self.hand.count('Y7') + self.hand.count('B7')) * 5
-        self.max_bid += (self.hand.count('R8') + self.hand.count('G8') + self.hand.count('Y8') + self.hand.count('B8')) * 5
-        self.max_bid += (self.hand.count('R9') + self.hand.count('G9') + self.hand.count('Y9') + self.hand.count('B9')) * 5
+        # determine the number of 5-9s of trump in hand and add 5 for each (HH is a narcissist and thinks he can win with anything)
+        for card in self.hand:
+            if card[0] == self.pref_trump:
+                if int(card[1:]) >= 5 and int(card[1:]) <= 9:
+                    self.max_bid += 5
         # if HH has a rook, add 20
-        if 'X' in self.hand:
+        if 'XXX' in self.hand:
             self.max_bid += 20
+
+    def choose_nest(self):
+
+        # HH will prioritize 5s first (he thinks he's really skilled and will take the last trick)
+        # but he won't prioritize 10s and 14s (he's not that stupid)
+        cards_for_nest = []
+        # add all the 5s to the nest
+        for card in self.hand:
+            if card[1:] == '5':
+                cards_for_nest.append(card)
+                self.hand.remove(card)
+        # nest needs to have a length of 5, so add the lowest cards not in trump to the nest until it does
+        while len(cards_for_nest) < 5:
+            lowest = 'R15'
+            for card in self.hand:
+                if card[0] != self.pref_trump and card[1:] < lowest[1:]:
+                    lowest = card
+            cards_for_nest.append(lowest)
+            self.hand.remove(lowest)
+        
+        return cards_for_nest
 
     # play the card in a trick
     def card():
@@ -374,11 +454,21 @@ class RR(Player):
         self.max_bid += (self.hand.count('R13') + self.hand.count('G13') + self.hand.count('Y13') + self.hand.count('B13')) * 5
         # determine the number of 10s in hand and add 10 for each
         self.max_bid += (self.hand.count('R10') + self.hand.count('G10') + self.hand.count('Y10') + self.hand.count('B10')) * 10
-        # add a random multiple of 5 between 0 and 20 (RR is unpredictable)
-        self.max_bid += random.randint(0, 4) * 5
+        # add a random multiple of 5 between 0 and 25 (RR is unpredictable)
+        self.max_bid += random.randint(0, 5) * 5
         # if RR has a rook, add 20
-        if 'X' in self.hand:
+        if 'XXX' in self.hand:
             self.max_bid += 20
+
+    def choose_nest(self):
+
+        # RR puts in 5 random cards
+        cards_for_nest = []
+        for i in range(0, 5):
+            card = random.choice(self.hand)
+            cards_for_nest.append(card)
+            self.hand.remove(card)
+        return cards_for_nest
 
     # play the card in a trick
     def card():
