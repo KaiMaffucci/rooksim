@@ -253,7 +253,7 @@ class Game:
         self.setup_nest()
 
         # play tricks until all players are out of cards
-        while len(self.player1.hand) > 0:
+        while len(self.p1.hand) > 0:
             self.play_trick()
         
         # calculate points taken by each player
