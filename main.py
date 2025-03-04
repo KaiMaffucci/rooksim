@@ -14,7 +14,7 @@ def main():
     # test code
     game.deal()
 
-    # testing each player's bidding strategy to make sure the numbers make sense
+    # testing each player's bidding strategy to make sure the numbers make sense 
     game.all_bid()
     print(game.p1, game.p1.max_bid)
     print(game.p2, game.p2.max_bid)

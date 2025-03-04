@@ -29,6 +29,8 @@ may need benchmarking
 
 idea: "lowest()" and "highest()" functions for cards
 
+
+TODO: put different characters into seperate files?
 """
 
 # created with assistance from GitHub copilot
@@ -89,12 +91,21 @@ class Game:
         # has 57-16=41 cards, 4 suits of 14 cards each, 1 rook
         # suits are red, green, yellow, black
         deck = []
-        for i in range(5, 15):
+        for i in range(5, 10):
+            # make sure that if the card is less than 10, it has a 0 in front of it
+            deck.append('R0' + str(i))
+            deck.append('G0' + str(i))
+            deck.append('Y0' + str(i))
+            deck.append('B0' + str(i))
+        for i in range(10, 15):
             deck.append('R' + str(i))
             deck.append('G' + str(i))
             deck.append('Y' + str(i))
             deck.append('B' + str(i))
         deck.append('X20') # rook
+
+        # print the deck and its length (test code)
+        print(len(deck), deck)
 
         # shuffle deck
         random.shuffle(deck)
@@ -367,14 +378,14 @@ class Game:
         
         # determine the winner
         if self.p1.score >= 300:
-            # store result in text file
-            self.winner_file.write("Player 1 wins!\n")
+            # store which player (Papa, RR, etc) won in the winner file
+            self.winner_file.write(str(type(self.p1)) + "\n")
         elif self.p2.score >= 300:
-            self.winner_file.write("Player 2 wins!\n")
+            self.winner_file.write(str(type(self.p2)) + "\n")
         elif self.p3.score >= 300:
-            self.winner_file.write("Player 3 wins!\n")
+            self.winner_file.write(str(type(self.p3)) + "\n")
         elif self.p4.score >= 300:
-            self.winner_file.write("Player 4 wins!\n")
+            self.winner_file.write(str(type(self.p4)) + "\n")
         else:
             print("Error: no winner found")
 
@@ -596,6 +607,7 @@ class Papa(Player):
         return cards_for_nest
 
     # play the card in a trick
+    # note: we do NOT need to delete the chosen card, this is done in another method
     def play_card(self, trick, lead, trump):
 
         # if Papa is leading the trick, he will play his highest card (this could probably be better, but it'll work for now)
@@ -609,15 +621,14 @@ class Papa(Player):
         # Papa is different: he will look at the cards in the trick
         # and try to either minimize loss or maximize gain.
         
-
-        # in the leading suit, he will first try to play his lowest card that is higher than the highest card in the trick
+        # in the leading suit
         if lead in [card[0] for card in self.hand]:
 
+            # he will first try to play his lowest card that is higher than the highest card in the trick
             highest = 'R0'
             for card in trick:
-                if card[1:] > highest[1:]:
+                if card[0] == lead and card[1:] > highest[1:]:
                     highest = card
-
             lowest = 'X20'
             for card in self.hand:
                 if card[0] == lead and card[1:] > highest[1:] and card[1:] < lowest[1:]:
@@ -630,23 +641,26 @@ class Papa(Player):
                 for card in self.hand:
                     if card[0] == lead and card[1:] < lowest[1:]:
                         lowest = card
-                if lowest != 'X20':
-                    return lowest
+                return lowest
         # if he has no cards in the leading suit, he will play his highest trump
         elif trump in [card[0] for card in self.hand]:
             highest = 'R0'
             for card in self.hand:
                 if card[0] == trump and card[1:] > highest[1:]:
                     highest = card
-            if highest != 'R0':
-                return highest
+            return highest
         # if he has no cards in the leading suit or trump, he will play his lowest card
         else:
             lowest = 'X20'
             for card in self.hand:
                 if card[1:] < lowest[1:]:
                     lowest = card
-            return lowest
+            if lowest != 'X20':
+                return lowest
+            # all else fails, play a random card from hand
+            # this should never happen, but apparently it is, so i'm putting this here for now
+            #else:
+            #    return random.choice(self.hand)
 
 
 # Hideous Hog: aggressive but skilled
