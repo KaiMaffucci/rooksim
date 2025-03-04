@@ -104,9 +104,6 @@ class Game:
             deck.append('B' + str(i))
         deck.append('X20') # rook
 
-        # print the deck and its length (test code)
-        print(len(deck), deck)
-
         # shuffle deck
         random.shuffle(deck)
 
@@ -161,7 +158,10 @@ class Game:
 
     # method to setup the nest
     def setup_nest(self):
-        
+
+        # print nest (test code)
+        #print("Nest:", self.nest)
+
         # whoever won the bid gets to take the nest (TODO: if a player gets the nest, they should also put 5 cards back)
         # if the bid winner is 1, they get the nest
         # depending on the player, they will choose different cards to put in the nest
@@ -180,22 +180,26 @@ class Game:
         elif self.bid_winner == 4:
             self.p4.hand.extend(self.nest)
             self.nest = self.p4.choose_nest()
-            
         else:
             print("Error: no bid winner found") # should never run
+        
+        # make sure that all hand sizes are still the same
+        if len(self.p1.hand) != len(self.p2.hand) or len(self.p1.hand) != len(self.p3.hand) or len(self.p1.hand) != len(self.p4.hand):
+            print("Error: hand sizes differ at nest creation")
+            # print player hand stuff (test code)
+            print(type(self.p1), len(self.p1.hand), self.p1.hand)
+            print(type(self.p2), len(self.p2.hand), self.p2.hand)
+            print(type(self.p3), len(self.p3.hand), self.p3.hand)
+            print(type(self.p4), len(self.p4.hand), self.p4.hand)
+            # exit the program
+            exit()
 
 
     # play a single trick
     def play_trick(self):
         
         # print leading player
-        print("Leading player:", self.leading_player)
-
-        # print how many cards are in each players' hand and what object type they are (test code)
-        print(type(self.p1), len(self.p1.hand))
-        print(type(self.p2), len(self.p2.hand))
-        print(type(self.p3), len(self.p3.hand))
-        print(type(self.p4), len(self.p4.hand))
+        #print("Leading player:", self.leading_player)
 
         self.leading_suit = '' # reset the leading suit
 
@@ -236,8 +240,20 @@ class Game:
         else:
             print("Error: no leading player found") # should never run
 
-        # test code: print out the current trick
-        print(self.current_trick)
+        # if there is a None in the current trick, print an error message
+        if None in self.current_trick:
+            print("Error: None in current trick")
+            # print leading player
+            print("Leading player:", self.leading_player)
+            # print current trick (test code)
+            print(self.current_trick)
+            # print hand stuff
+            print(type(self.p1), len(self.p1.hand), self.p1.hand)
+            print(type(self.p2), len(self.p2.hand), self.p2.hand)
+            print(type(self.p3), len(self.p3.hand), self.p3.hand)
+            print(type(self.p4), len(self.p4.hand), self.p4.hand)
+            # exit the program
+            exit()
 
         # determine winner of the trick
         highest = 'R0'
@@ -274,6 +290,19 @@ class Game:
             if card in self.p4.hand:
                 self.p4.hand.remove(card)
 
+        # if hand sizes differ, print an error message
+        if len(self.p1.hand) != len(self.p2.hand) or len(self.p1.hand) != len(self.p3.hand) or len(self.p1.hand) != len(self.p4.hand):
+            print("Error: hand sizes differ")
+            # print current trick (test code)
+            print(self.current_trick)
+            # print player hand stuff (test code)
+            print(type(self.p1), len(self.p1.hand), self.p1.hand)
+            print(type(self.p2), len(self.p2.hand), self.p2.hand)
+            print(type(self.p3), len(self.p3.hand), self.p3.hand)
+            print(type(self.p4), len(self.p4.hand), self.p4.hand)
+            # exit the program
+            exit()
+
         # clear the current trick
         self.current_trick = []
 
@@ -296,7 +325,7 @@ class Game:
         while len(self.p1.hand) > 0:
             self.play_trick()
             tricks_played += 1
-            print("Trick", tricks_played, "played")
+            #print("Trick", tricks_played, "played")
         
         # winner of the last trick adds the nest to their taken cards
         if self.leading_player == 1:
@@ -349,24 +378,52 @@ class Game:
         # team that lost the bid just gets whatever points they took
         if self.bid_winner == 1 or self.bid_winner == 3:
             if self.p1.pts_taken + self.p3.pts_taken >= self.winning_bid:
-                self.p1.score += self.p1.pts_taken
-                self.p3.score += self.p3.pts_taken
+                self.p1.score += self.p1.pts_taken + self.p3.pts_taken
+                self.p3.score += self.p3.pts_taken + self.p1.pts_taken
             else:
                 self.p1.score -= self.winning_bid
                 self.p3.score -= self.winning_bid
-            self.p2.score += self.p2.pts_taken
-            self.p4.score += self.p4.pts_taken
+            self.p2.score += self.p2.pts_taken + self.p4.pts_taken
+            self.p4.score += self.p4.pts_taken + self.p2.pts_taken
         elif self.bid_winner == 2 or self.bid_winner == 4:
             if self.p2.pts_taken + self.p4.pts_taken >= self.winning_bid:
-                self.p2.score += self.p2.pts_taken
-                self.p4.score += self.p4.pts_taken
+                self.p2.score += self.p2.pts_taken + self.p4.pts_taken
+                self.p4.score += self.p4.pts_taken + self.p2.pts_taken
             else:
                 self.p1.score -= self.winning_bid
                 self.p3.score -= self.winning_bid
-            self.p1.score += self.p1.pts_taken
-            self.p3.score += self.p3.pts_taken
+            self.p1.score += self.p1.pts_taken + self.p3.pts_taken
+            self.p3.score += self.p3.pts_taken + self.p1.pts_taken
         else:
             print("Error: no bid winner found") # should never run
+        
+        # print each players' score (test code)
+        print("P1 ", type(self.p1), "score:", self.p1.score)
+        print("P2 score:" , type(self.p2), self.p2.score)
+        print("P3 score:", type(self.p3), self.p3.score)
+        print("P4 score:", type(self.p4), self.p4.score)
+        print("---------------------------------------------")
+
+        # nuke almost everything for new round
+        # TODO: this would probably be better calling a method to do this for us
+        self.nest = []
+        self.p1.hand = []
+        self.p2.hand = []
+        self.p3.hand = []
+        self.p4.hand = []
+        self.p1.taken = []
+        self.p2.taken = []
+        self.p3.taken = []
+        self.p4.taken = []
+        self.p1.pts_taken = 0
+        self.p2.pts_taken = 0
+        self.p3.pts_taken = 0
+        self.p4.pts_taken = 0
+        self.bid_winner = 0
+        self.leading_player = 0
+        self.winning_bid = 0
+        self.trump = ''
+        self.leading_suit = ''
 
 
     # run whole game
@@ -377,6 +434,7 @@ class Game:
             self.play_round()
         
         # determine the winner
+        # TODO: refactor to also store the winner's partner
         if self.p1.score >= 300:
             # store which player (Papa, RR, etc) won in the winner file
             self.winner_file.write(str(type(self.p1)) + "\n")
@@ -388,6 +446,12 @@ class Game:
             self.winner_file.write(str(type(self.p4)) + "\n")
         else:
             print("Error: no winner found")
+        
+        # nuke scores for new game
+        self.p1.score = 0
+        self.p2.score = 0
+        self.p3.score = 0
+        self.p4.score = 0
 
 
 # BIG TODO: fix the play_card methods in the player classes so they account for being the first to play in a trick
@@ -621,14 +685,15 @@ class Papa(Player):
         # Papa is different: he will look at the cards in the trick
         # and try to either minimize loss or maximize gain.
         
-        # in the leading suit
+        # first, look for cards in the leading suit
         if lead in [card[0] for card in self.hand]:
 
-            # he will first try to play his lowest card that is higher than the highest card in the trick
+            # get the highest card in the trick
             highest = 'R0'
             for card in trick:
                 if card[0] == lead and card[1:] > highest[1:]:
                     highest = card
+            # he will first try to play his lowest card that is higher than the highest card in the trick
             lowest = 'X20'
             for card in self.hand:
                 if card[0] == lead and card[1:] > highest[1:] and card[1:] < lowest[1:]:
@@ -649,7 +714,10 @@ class Papa(Player):
                 if card[0] == trump and card[1:] > highest[1:]:
                     highest = card
             return highest
-        # if he has no cards in the leading suit or trump, he will play his lowest card
+        # if he has no cards in the leading suit or trump but he DOES have rook, he plays the rook
+        elif 'X20' in self.hand:
+            return 'X20'
+        # if nothing else, he will play his lowest card in general
         else:
             lowest = 'X20'
             for card in self.hand:
@@ -698,7 +766,7 @@ class HH(Player):
         # add all the 5s to the nest
         # TODO: make it so he will prioritize non-trump 5s first
         for card in self.hand:
-            if card[1:] == '5':
+            if card[0] != self.pref_trump and card[1:] == '5':
                 cards_for_nest.append(card)
                 self.hand.remove(card)
         # nest needs to have a length of 5, so add the lowest cards not in trump to the nest until it does
@@ -729,8 +797,12 @@ class HH(Player):
                     highest = card
             return highest
 
-        # HH will play the highest card in his hand that is in the leading suit, or the rook if he has it.
-        if lead in [card[0] for card in self.hand] or 'X20' in self.hand:
+        # HH will play the highest card in his hand that is in the leading suit.
+        # HH will slam the rook down if he has it.
+        if 'X20' in self.hand:
+            return 'X20'
+        # if he has a card in the leading suit, he will play his highest card in that suit.
+        elif lead in [card[0] for card in self.hand]:
             highest = 'R0'
             for card in self.hand:
                 if card[0] == lead and card[1:] > highest[1:]:
