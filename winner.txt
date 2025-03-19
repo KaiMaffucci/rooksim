@@ -1,0 +1,15 @@
+<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
+<class 'game_logic.Papa'> and <class 'game_logic.HH'>
+<class 'game_logic.Papa'> and <class 'game_logic.RR'>
+<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
+<class 'game_logic.Papa'> and <class 'game_logic.RR'>
+<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
+<class 'game_logic.Papa'> and <class 'game_logic.RR'>
+<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
+<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
+<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
+A player's score is -100000 or less! Let's put an end to this madness!
+P1 <class 'game_logic.Karapet'> score: -100000
+P2 score: <class 'game_logic.Papa'> 0
+P3 score: <class 'game_logic.HH'> -100000
+P4 score: <class 'game_logic.RR'> 0

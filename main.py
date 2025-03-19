@@ -6,7 +6,7 @@ def main():
     game = Game()
 
     # play 100 games while recording the winner of each game in a text file
-    for i in range(10):
+    for i in range(100):
         game.run()
 
 
