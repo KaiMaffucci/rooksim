@@ -395,19 +395,19 @@ class Game:
                 self.p2.score += self.p2.pts_taken + self.p4.pts_taken
                 self.p4.score += self.p4.pts_taken + self.p2.pts_taken
             else:
-                self.p1.score -= self.winning_bid
-                self.p3.score -= self.winning_bid
+                self.p2.score -= self.winning_bid
+                self.p4.score -= self.winning_bid
             self.p1.score += self.p1.pts_taken + self.p3.pts_taken
             self.p3.score += self.p3.pts_taken + self.p1.pts_taken
         else:
             print("Error: no bid winner found") # should never run
         
         # print each players' score (test code)
-        print("P1 ", type(self.p1), "score:", self.p1.score)
-        print("P2 score:" , type(self.p2), self.p2.score)
-        print("P3 score:", type(self.p3), self.p3.score)
-        print("P4 score:", type(self.p4), self.p4.score)
-        print("---------------------------------------------")
+        #print("P1 ", type(self.p1), "score:", self.p1.score)
+        #print("P2 score:" , type(self.p2), self.p2.score)
+        #print("P3 score:", type(self.p3), self.p3.score)
+        #print("P4 score:", type(self.p4), self.p4.score)
+        #print("---------------------------------------------")
 
         # if any of the players' scores are -100000 or less, exit the program
         if self.p1.score <= -100000 or self.p2.score <= -100000 or self.p3.score <= -100000 or self.p4.score <= -100000:
@@ -416,9 +416,14 @@ class Game:
             self.winner_file.write("A player's score is -100000 or less! Let's put an end to this madness!\n")
             # write player scores to file
             self.winner_file.write("P1 " + str(type(self.p1)) + " score: " + str(self.p1.score) + "\n")
-            self.winner_file.write("P2 score: " + str(type(self.p2)) + " " + str(self.p2.score) + "\n")
-            self.winner_file.write("P3 score: " + str(type(self.p3)) + " " + str(self.p3.score) + "\n")
-            self.winner_file.write("P4 score: " + str(type(self.p4)) + " " + str(self.p4.score) + "\n")
+            self.winner_file.write("P2 " + str(type(self.p2)) + " score: " + str(self.p2.score) + "\n")
+            self.winner_file.write("P3 " + str(type(self.p3)) + " score: " + str(self.p3.score) + "\n")
+            self.winner_file.write("P4 " + str(type(self.p4)) + " score: " + str(self.p4.score) + "\n")
+            # write player bids and player types to file
+            self.winner_file.write("P1 " + str(type(self.p1)) + " bid: " + str(self.p1.max_bid) + "\n")
+            self.winner_file.write("P2 " + str(type(self.p2)) + " bid: " + str(self.p2.max_bid) + "\n")
+            self.winner_file.write("P3 " + str(type(self.p3)) + " bid: " + str(self.p3.max_bid) + "\n")
+            self.winner_file.write("P4 " + str(type(self.p4)) + " bid: " + str(self.p4.max_bid) + "\n")
             # exit the program
             exit()
 
