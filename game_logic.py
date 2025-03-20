@@ -31,25 +31,20 @@ idea: "lowest()" and "highest()" functions for cards
 
 
 TODO: put different characters into seperate files?
+
+note: not just the hog will get a really low negative score, all players are capable apparently
 """
 
 # created with assistance from GitHub copilot
 
 import random
+import math
 
 
 # game class
 class Game:
 
-    def __init__(self):
-
-        # later will specify certain characters
-        # assume 1 & 3 will be partners, 2 & 4 will be partners
-        
-        self.p1 = Player()
-        self.p2 = Player()
-        self.p3 = Player()
-        self.p4 = Player()
+    def assign_characters(self):
 
         # randomly choose player 1 to be Karapet or Greek. 2 will be the other
         if random.randint(1, 2) == 1:
@@ -65,8 +60,27 @@ class Game:
             self.p4 = RR()
         else:
             self.p3 = RR()
-            self.p4 = HH() 
+            self.p4 = HH()
 
+    def __init__(self):
+
+        # later will specify certain characters
+        # assume 1 & 3 will be partners, 2 & 4 will be partners
+        self.p1 = Player()
+        self.p2 = Player()
+        self.p3 = Player()
+        self.p4 = Player()
+
+        # make each player a specific character
+        self.assign_characters()
+
+        # determine partners
+        # p1 and p3 are partners
+        self.p1.partner = 3
+        self.p3.partner = 1
+        # p2 and p4 are partners
+        self.p2.partner = 4
+        self.p4.partner = 2
 
         self.nest = [] # cards in the nest/kiddy
         self.current_trick = [] # cards in the current trick
@@ -117,15 +131,6 @@ class Game:
         # deal cards to the nest
         for i in range(0, 5):
             self.nest.append(deck.pop())
-        
-        # TODO: move this?
-        # determine partners
-        # p1 and p3 are partners
-        self.p1.partner = 3
-        self.p3.partner = 1
-        # p2 and p4 are partners
-        self.p2.partner = 4
-        self.p4.partner = 2
 
 
     # make players bid
@@ -390,19 +395,37 @@ class Game:
                 self.p2.score += self.p2.pts_taken + self.p4.pts_taken
                 self.p4.score += self.p4.pts_taken + self.p2.pts_taken
             else:
-                self.p1.score -= self.winning_bid
-                self.p3.score -= self.winning_bid
+                self.p2.score -= self.winning_bid
+                self.p4.score -= self.winning_bid
             self.p1.score += self.p1.pts_taken + self.p3.pts_taken
             self.p3.score += self.p3.pts_taken + self.p1.pts_taken
         else:
             print("Error: no bid winner found") # should never run
         
         # print each players' score (test code)
-        print("P1 ", type(self.p1), "score:", self.p1.score)
-        print("P2 score:" , type(self.p2), self.p2.score)
-        print("P3 score:", type(self.p3), self.p3.score)
-        print("P4 score:", type(self.p4), self.p4.score)
-        print("---------------------------------------------")
+        #print("P1 ", type(self.p1), "score:", self.p1.score)
+        #print("P2 score:" , type(self.p2), self.p2.score)
+        #print("P3 score:", type(self.p3), self.p3.score)
+        #print("P4 score:", type(self.p4), self.p4.score)
+        #print("---------------------------------------------")
+
+        # if any of the players' scores are -100000 or less, exit the program
+        if self.p1.score <= -100000 or self.p2.score <= -100000 or self.p3.score <= -100000 or self.p4.score <= -100000:
+            print("A player's score is -100000 or less! Let's put an end to this madness!")
+            # write info to file
+            self.winner_file.write("A player's score is -100000 or less! Let's put an end to this madness!\n")
+            # write player scores to file
+            self.winner_file.write("P1 " + str(type(self.p1)) + " score: " + str(self.p1.score) + "\n")
+            self.winner_file.write("P2 " + str(type(self.p2)) + " score: " + str(self.p2.score) + "\n")
+            self.winner_file.write("P3 " + str(type(self.p3)) + " score: " + str(self.p3.score) + "\n")
+            self.winner_file.write("P4 " + str(type(self.p4)) + " score: " + str(self.p4.score) + "\n")
+            # write player bids and player types to file
+            self.winner_file.write("P1 " + str(type(self.p1)) + " bid: " + str(self.p1.max_bid) + "\n")
+            self.winner_file.write("P2 " + str(type(self.p2)) + " bid: " + str(self.p2.max_bid) + "\n")
+            self.winner_file.write("P3 " + str(type(self.p3)) + " bid: " + str(self.p3.max_bid) + "\n")
+            self.winner_file.write("P4 " + str(type(self.p4)) + " bid: " + str(self.p4.max_bid) + "\n")
+            # exit the program
+            exit()
 
         # nuke almost everything for new round
         # TODO: this would probably be better calling a method to do this for us
@@ -436,14 +459,14 @@ class Game:
         # determine the winner
         # TODO: refactor to also store the winner's partner
         if self.p1.score >= 300:
-            # store which player (Papa, RR, etc) won in the winner file
-            self.winner_file.write(str(type(self.p1)) + "\n")
+            # store which player (Papa, RR, etc) won and their partner in the winner file
+            self.winner_file.write(str(type(self.p1)) + " and " + str(type(self.p3)) + "\n")
         elif self.p2.score >= 300:
-            self.winner_file.write(str(type(self.p2)) + "\n")
+            self.winner_file.write(str(type(self.p2)) + " and " + str(type(self.p4)) + "\n")
         elif self.p3.score >= 300:
-            self.winner_file.write(str(type(self.p3)) + "\n")
+            self.winner_file.write(str(type(self.p1)) + " and " + str(type(self.p3)) + "\n")
         elif self.p4.score >= 300:
-            self.winner_file.write(str(type(self.p4)) + "\n")
+            self.winner_file.write(str(type(self.p2)) + " and " + str(type(self.p4))+ "\n")
         else:
             print("Error: no winner found")
         
@@ -452,6 +475,9 @@ class Game:
         self.p2.score = 0
         self.p3.score = 0
         self.p4.score = 0
+
+        # assign characters again for variety
+        self.assign_characters()
 
 
 # BIG TODO: fix the play_card methods in the player classes so they account for being the first to play in a trick
@@ -464,7 +490,7 @@ class Player:
     def __init__(self):
 
         self.partner = 0        # partner undeclared
-        self.max_bid = 35        # no max bid (maximum amount the player is willing to bid) declared yet
+        self.max_bid = 0        # no max bid (maximum amount the player is willing to bid) declared yet
         self.current_bid = 0    # no bid started yet
         self.pref_trump = ''    # no preferred trump suit declared yet
         self.score = 0          # everyone starts at 0 points
@@ -544,6 +570,23 @@ class Player:
                 self.passing = True
 
 
+# TODO: during bidding, have each player determine the most trumps their partner has
+# and bid based on that information
+
+# combinations function
+def C(n, r):
+    return math.factorial(n) // (math.factorial(r) * math.factorial(n - r))
+
+# determine probability of a player having a certain number of trumps
+# t = number of trumps left in deck
+# u = number of trumps in player's hand
+# n = number of cards left in deck
+# h = number of cards in player's hand
+def prob_trumps(t, u, n=27, h=9):
+    return C(t, u) * C(n - t, h - u) / C(n, h)
+   
+
+
 # Karapet: cautious, not a risk taker, looks to minimize loss moreso
 class Karapet(Player):
 
@@ -565,6 +608,30 @@ class Karapet(Player):
         # if Karapet has a rook, add 20
         if 'X20' in self.hand:
             self.max_bid += 20
+        
+        # determine the total number of trumps (rooks count as trump) in hand
+        trumps_in_hand = 0
+        rook_in_hand = False
+        for card in self.hand:
+            if card[0] == self.pref_trump:
+                trumps_in_hand += 1
+            elif card == 'X20':
+                trumps_in_hand += 1
+                rook_in_hand = True
+        
+        # determine number of trumps left (not in hand)
+        trumps_elsewhere = 9 - trumps_in_hand
+        # if the rook isn't in the hand, count it as a trump elsewhere
+        if not rook_in_hand:
+            trumps_elsewhere += 1
+
+        # for each number of trumps Karapet's partner could have, calculate the probability of that happening
+        # until we find one that is above %50
+        # then add 5 to Karapet's bid for each
+        for i in range(1, trumps_elsewhere + 1):
+            if prob_trumps(trumps_elsewhere, i) > 0.5:
+                self.max_bid += 5 * i
+                break
 
     def choose_nest(self):
 
@@ -649,6 +716,30 @@ class Papa(Player):
         # if Papa has a rook, add 20
         if 'X20' in self.hand:
             self.max_bid += 20
+        
+        # determine the total number of trumps (rooks count as trump) in hand
+        trumps_in_hand = 0
+        rook_in_hand = False
+        for card in self.hand:
+            if card[0] == self.pref_trump:
+                trumps_in_hand += 1
+            elif card == 'X20':
+                trumps_in_hand += 1
+                rook_in_hand = True
+        
+        # determine number of trumps left (not in hand)
+        trumps_elsewhere = 9 - trumps_in_hand
+        # if the rook isn't in the hand, count it as a trump elsewhere
+        if not rook_in_hand:
+            trumps_elsewhere += 1
+
+        # for each number of trumps Papa's partner could have, calculate the probability of that happening
+        # until we find one that is above %50
+        # then add 5 to Papa's bid for each
+        for i in range(1, trumps_elsewhere + 1):
+            if prob_trumps(trumps_elsewhere, i) > 0.5:
+                self.max_bid += 5 * i
+                break
 
     def choose_nest(self):
 
@@ -753,10 +844,34 @@ class HH(Player):
         for card in self.hand:
             if card[0] == self.pref_trump:
                 if int(card[1:]) >= 5 and int(card[1:]) <= 9:
-                    self.max_bid += 5
+                    if random.randint(1, 2) == 1: self.max_bid += 5 # made it so he only adds it roughly half the time because he keeps bidding too high
         # if HH has a rook, add 20
         if 'X20' in self.hand:
             self.max_bid += 20
+        
+        # determine the total number of trumps (rooks count as trump) in hand
+        trumps_in_hand = 0
+        rook_in_hand = False
+        for card in self.hand:
+            if card[0] == self.pref_trump:
+                trumps_in_hand += 1
+            elif card == 'X20':
+                trumps_in_hand += 1
+                rook_in_hand = True
+        
+        # determine number of trumps left (not in hand)
+        trumps_elsewhere = 9 - trumps_in_hand
+        # if the rook isn't in the hand, count it as a trump elsewhere
+        if not rook_in_hand:
+            trumps_elsewhere += 1
+
+        # for each number of trumps HH's partner could have, calculate the probability of that happening
+        # until we find one that is above %50
+        # then add 5 to HH's bid for each
+        for i in range(1, trumps_elsewhere + 1):
+            if prob_trumps(trumps_elsewhere, i) > 0.5:
+                self.max_bid += 5 * i
+                break
 
     def choose_nest(self):
 
@@ -846,6 +961,30 @@ class RR(Player):
         # if RR has a rook, add 20
         if 'X20' in self.hand:
             self.max_bid += 20
+        
+        # determine the total number of trumps (rooks count as trump) in hand
+        trumps_in_hand = 0
+        rook_in_hand = False
+        for card in self.hand:
+            if card[0] == self.pref_trump:
+                trumps_in_hand += 1
+            elif card == 'X20':
+                trumps_in_hand += 1
+                rook_in_hand = True
+        
+        # determine number of trumps left (not in hand)
+        trumps_elsewhere = 9 - trumps_in_hand
+        # if the rook isn't in the hand, count it as a trump elsewhere
+        if not rook_in_hand:
+            trumps_elsewhere += 1
+
+        # for each number of trumps RR's partner could have, calculate the probability of that happening
+        # until we find one that is above %50
+        # then add 5 to RR's bid for each
+        for i in range(1, trumps_elsewhere + 1):
+            if prob_trumps(trumps_elsewhere, i) > 0.5:
+                self.max_bid += 5 * i
+                break
 
     def choose_nest(self):
 
