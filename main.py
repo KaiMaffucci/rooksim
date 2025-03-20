@@ -1,7 +1,6 @@
 from game_logic import *
 
 def main():
-
     
     game = Game()
 
@@ -9,17 +8,18 @@ def main():
     for i in range(100):
         game.run()
 
+    game.end()
 
-    """
-    # test code
-    game.deal()
-
-    # testing each player's bidding strategy to make sure the numbers make sense 
-    game.all_bid()
-    print(game.p1, game.p1.max_bid)
-    print(game.p2, game.p2.max_bid)
-    print(game.p3, game.p3.max_bid)
-    print(game.p4, game.p4.max_bid)
-    """
+    # read file line by line, and print the number of wins for each player
+    with open("winner.txt", "r") as f:
+        winner = f.readlines()
+        karapet_wins = winner.count("Karapet\n")
+        papa_wins = winner.count("Papa\n")
+        hh_wins = winner.count("HH\n")
+        rr_wins = winner.count("RR\n")
+        print("Karapet wins: ", karapet_wins)
+        print("Papa wins: ", papa_wins)
+        print("Hog wins: ", hh_wins)
+        print("Rabbit wins: ", rr_wins)
 
 main()

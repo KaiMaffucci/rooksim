@@ -41,6 +41,9 @@ import random
 import math
 
 
+
+
+
 # game class
 class Game:
 
@@ -97,6 +100,13 @@ class Game:
         # open the file again in append mode
         self.winner_file = open("winner.txt", "a")
 
+        # create text file which will store all the play-by-plays
+        # if there's a file already, overwrite it
+        self.plays_file = open("plays.txt", "w")
+        self.plays_file.close()
+        # open the file again in append mode
+        self.plays_file = open("plays.txt", "a")
+
 
     # deals starting hand and assigns partners
     def deal(self):
@@ -136,17 +146,33 @@ class Game:
     # make players bid
     def all_bid(self):
         
-        # bid loop until all players have passed
-        while not (self.p1.passing and self.p2.passing and self.p3.passing and self.p4.passing):
-            # player 1 bids
-            self.p1.bid()
-            # player 2 bids
-            self.p2.bid()
-            # player 3 bids
-            self.p3.bid()
-            # player 4 bids
-            self.p4.bid()
-        
+        # bid loop until exactly 3 players are passing
+        while self.p1.passing + self.p2.passing + self.p3.passing + self.p4.passing < 3:
+            # p1 bids
+            if not self.p1.passing:
+                self.p1.bid()
+            # p2 bids
+            if not self.p2.passing:
+                self.p2.bid()
+            # p3 bids
+            if not self.p3.passing:
+                self.p3.bid()
+            # p4 bids
+            if not self.p4.passing:
+                self.p4.bid()
+
+        # print everyone's bids (test code)
+        #print("P1 bid:", self.p1.max_bid)
+        #print("P2 bid:", self.p2.max_bid)
+        #print("P3 bid:", self.p3.max_bid)
+        #print("P4 bid:", self.p4.max_bid)
+
+        # record the bids in the plays file
+        self.plays_file.write("P1 " + self.p1.get_name() + " max bid: " + str(self.p1.max_bid) + "\n")
+        self.plays_file.write("P2 " + self.p2.get_name() + " max bid: " + str(self.p2.max_bid) + "\n")
+        self.plays_file.write("P3 " + self.p3.get_name() + " max bid: " + str(self.p3.max_bid) + "\n")
+        self.plays_file.write("P4 " + self.p4.get_name() + " max bid: " + str(self.p4.max_bid) + "\n")
+
         # determine the winning bid and bidder
         self.winning_bid = max(self.p1.current_bid, self.p2.current_bid, self.p3.current_bid, self.p4.current_bid)
         if self.p1.current_bid == self.winning_bid:
@@ -160,6 +186,10 @@ class Game:
         else:
             print("Error: no bid winner found") # should never run
 
+        # record winning bidder and bid in the plays file
+        self.plays_file.write("Winning bidder: P" + str(self.bid_winner) + " " + str(self.winning_bid) + "\n")
+        self.plays_file.write("-" * 50 + "\n")
+    
 
     # method to setup the nest
     def setup_nest(self):
@@ -245,7 +275,7 @@ class Game:
         else:
             print("Error: no leading player found") # should never run
 
-        # if there is a None in the current trick, print an error message
+        # if there is a None in the current trick, print an error message (this should never happen)
         if None in self.current_trick:
             print("Error: None in current trick")
             # print leading player
@@ -283,6 +313,15 @@ class Game:
         else:
             print("Error: no winner found") # should never run
         
+        # write the leader of the trick to the plays file
+        self.plays_file.write("Leader: P" + str(self.leading_player) + "\n")
+        # write the trick to the plays file
+        self.plays_file.write("Trick: " + str(self.current_trick) + "\n")
+        # write the winner of the trick to the plays file
+        self.plays_file.write("Winner: P" + str(self.leading_player) + "\n")
+
+        self.plays_file.write("-" * 50 + "\n")
+
         # clear the cards in the current trick from the players' hands
         # note: it would be more efficient to do this in each player's play_card method, but this is easier for now
         for card in self.current_trick:
@@ -456,19 +495,18 @@ class Game:
         while self.p1.score < 300 and self.p2.score < 300 and self.p3.score < 300 and self.p4.score < 300:
             self.play_round()
         
-        # determine the winner
-        # TODO: refactor to also store the winner's partner
+        # determine the winner and store which player(s) (Papa, RR, etc) won
+        self.winner_file.write("This game\'s winners:\n")
         if self.p1.score >= 300:
-            # store which player (Papa, RR, etc) won and their partner in the winner file
-            self.winner_file.write(str(type(self.p1)) + " and " + str(type(self.p3)) + "\n")
-        elif self.p2.score >= 300:
-            self.winner_file.write(str(type(self.p2)) + " and " + str(type(self.p4)) + "\n")
-        elif self.p3.score >= 300:
-            self.winner_file.write(str(type(self.p1)) + " and " + str(type(self.p3)) + "\n")
-        elif self.p4.score >= 300:
-            self.winner_file.write(str(type(self.p2)) + " and " + str(type(self.p4))+ "\n")
-        else:
-            print("Error: no winner found")
+            self.winner_file.write(self.p1.get_name() + "\n")
+        if self.p2.score >= 300:
+            self.winner_file.write(self.p2.get_name() + "\n")
+        if self.p3.score >= 300:
+            self.winner_file.write(self.p3.get_name() + "\n")
+        if self.p4.score >= 300:
+            self.winner_file.write(self.p4.get_name() + "\n")
+        
+        self.winner_file.write("-" * 50 + "\n")
         
         # nuke scores for new game
         self.p1.score = 0
@@ -478,6 +516,10 @@ class Game:
 
         # assign characters again for variety
         self.assign_characters()
+    
+    # close the files
+    def end(self):
+        self.winner_file.close()
 
 
 # BIG TODO: fix the play_card methods in the player classes so they account for being the first to play in a trick
@@ -490,7 +532,7 @@ class Player:
     def __init__(self):
 
         self.partner = 0        # partner undeclared
-        self.max_bid = 0        # no max bid (maximum amount the player is willing to bid) declared yet
+        self.max_bid = 25        # no max bid (maximum amount the player is willing to bid) declared yet
         self.current_bid = 0    # no bid started yet
         self.pref_trump = ''    # no preferred trump suit declared yet
         self.score = 0          # everyone starts at 0 points
@@ -498,6 +540,10 @@ class Player:
         self.taken = []         # no tricks taken yet
         self.pts_taken = 0      # no points from tricks calculated yet
         self.passing = False    # whether the player is passing on bidding yet (for bidding phase, starts as false)
+
+    # helper function to get just the name from the class
+    def get_name(self):
+        return str(type(self)).split('.')[-1][:-2]
 
     # calculate the preferred trump suit
     def calc_trump(self):
