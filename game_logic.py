@@ -67,6 +67,11 @@ class Game:
 
     def __init__(self):
 
+        # counts how many games have been played
+        self.games_played = 0
+        # counts how many tricks have been played in the round
+        self.tricks_played = 0
+
         # later will specify certain characters
         # assume 1 & 3 will be partners, 2 & 4 will be partners
         self.p1 = Player()
@@ -93,12 +98,28 @@ class Game:
         self.winning_bid = 0 # the highest bid made by a player
         self.trump = '' # the trump suit for the round
 
+        # trimester wins of each character
+        self.karapet_t1 = 0
+        self.karapet_t2 = 0
+        self.karapet_t3 = 0
+        self.papa_t1 = 0
+        self.papa_t2 = 0
+        self.papa_t3 = 0
+        self.hh_t1 = 0
+        self.hh_t2 = 0
+        self.hh_t3 = 0
+        self.rr_t1 = 0
+        self.rr_t2 = 0
+        self.rr_t3 = 0
+
         # create text file which will store the winner of each game
         # if there's a file already, overwrite it
         self.winner_file = open("winner.txt", "w")
         self.winner_file.close()
         # open the file again in append mode
         self.winner_file = open("winner.txt", "a")
+        # write which game it is to winner file
+        self.winner_file.write("Game " + str(self.games_played) + "\n")
 
         # create text file which will store all the play-by-plays
         # if there's a file already, overwrite it
@@ -106,6 +127,8 @@ class Game:
         self.plays_file.close()
         # open the file again in append mode
         self.plays_file = open("plays.txt", "a")
+        # write which game it is to plays file
+        self.plays_file.write("Game " + str(self.games_played) + "\n")
 
 
     # deals starting hand and assigns partners
@@ -194,9 +217,6 @@ class Game:
     # method to setup the nest
     def setup_nest(self):
 
-        # print nest (test code)
-        #print("Nest:", self.nest)
-
         # whoever won the bid gets to take the nest (TODO: if a player gets the nest, they should also put 5 cards back)
         # if the bid winner is 1, they get the nest
         # depending on the player, they will choose different cards to put in the nest
@@ -232,11 +252,17 @@ class Game:
 
     # play a single trick
     def play_trick(self):
-        
-        # print leading player
-        #print("Leading player:", self.leading_player)
 
         self.leading_suit = '' # reset the leading suit
+
+        # calculate which third of the game we're in
+        trimester = self.tricks_played % 9
+        if trimester == 0 or trimester == 1 or trimester == 2:
+            trimester = 1
+        elif trimester == 3 or trimester == 4 or trimester == 5:
+            trimester = 2
+        elif trimester == 6 or trimester == 7 or trimester == 8:
+            trimester = 3
 
         # if it's the first trick of the game, p1 leads
         if self.leading_player == 0:
@@ -293,32 +319,171 @@ class Game:
         # determine winner of the trick
         highest = 'R0'
         for card in self.current_trick:
-            if card[0] == self.trump and card[1:] > highest[1:]:
-                highest = card
-            elif card[0] == self.leading_suit and card[1:] > highest[1:]:
-                highest = card
-        # give the winner of the trick the cards in the trick and set them as the leading player for the next trick
+            if  card == 'X20' or highest == 'X20':
+                highest = 'X20'
+            else:
+                if card[0] == self.trump and card[1:] > highest[1:]:
+                    highest = card
+                elif card[0] == self.leading_suit and card[1:] > highest[1:]:
+                    highest = card
+
+        # give the winner of the trick the cards in the trick,
+        # set them as the leading player for the next trick,
+        # and add to their corresponding trimester win count (TODO: make this look a lot better)
         if self.current_trick[0] == highest:
+
             self.leading_player = 1
             self.p1.taken.extend(self.current_trick)
+            # add to the corresponding character trimester win count based on what trimester it is
+            if self.p1.get_name() == "Karapet":
+                if trimester == 1:
+                    self.karapet_t1 += 1
+                elif trimester == 2:
+                    self.karapet_t2 += 1
+                elif trimester == 3:
+                    self.karapet_t3 += 1
+            elif self.p1.get_name() == "Papa":
+                if trimester == 1:
+                    self.papa_t1 += 1
+                elif trimester == 2:
+                    self.papa_t2 += 1
+                elif trimester == 3:
+                    self.papa_t3 += 1
+            elif self.p1.get_name() == "HH":
+                if trimester == 1:
+                    self.hh_t1 += 1
+                elif trimester == 2:
+                    self.hh_t2 += 1
+                elif trimester == 3:
+                    self.hh_t3 += 1
+            elif self.p1.get_name() == "RR":
+                if trimester == 1:
+                    self.rr_t1 += 1
+                elif trimester == 2:
+                    self.rr_t2 += 1
+                elif trimester == 3:
+                    self.rr_t3 += 1
+
         elif self.current_trick[1] == highest:
+
             self.leading_player = 2
             self.p2.taken.extend(self.current_trick)
+
+            # TODO: add to the corresponding character trimester win count based on what trimester it is
+            if self.p2.get_name() == "Karapet":
+                if trimester == 1:
+                    self.karapet_t1 += 1
+                elif trimester == 2:
+                    self.karapet_t2 += 1
+                elif trimester == 3:
+                    self.karapet_t3 += 1
+            elif self.p2.get_name() == "Papa":
+                if trimester == 1:
+                    self.papa_t1 += 1
+                elif trimester == 2:
+                    self.papa_t2 += 1
+                elif trimester == 3:
+                    self.papa_t3 += 1
+            elif self.p2.get_name() == "HH":
+                if trimester == 1:
+                    self.hh_t1 += 1
+                elif trimester == 2:
+                    self.hh_t2 += 1
+                elif trimester == 3:
+                    self.hh_t3 += 1
+            elif self.p2.get_name() == "RR":
+                if trimester == 1:
+                    self.rr_t1 += 1
+                elif trimester == 2:
+                    self.rr_t2 += 1
+                elif trimester == 3:
+                    self.rr_t3 += 1
+
         elif self.current_trick[2] == highest:
+
             self.leading_player = 3
             self.p3.taken.extend(self.current_trick)
+
+            # add to the corresponding character trimester win count based on what trimester it is
+            if self.p3.get_name() == "Karapet":
+                if trimester == 1:
+                    self.karapet_t1 += 1
+                elif trimester == 2:
+                    self.karapet_t2 += 1
+                elif trimester == 3:
+                    self.karapet_t3 += 1
+            elif self.p3.get_name() == "Papa":
+                if trimester == 1:
+                    self.papa_t1 += 1
+                elif trimester == 2:
+                    self.papa_t2 += 1
+                elif trimester == 3:
+                    self.papa_t3 += 1
+            elif self.p3.get_name() == "HH":
+                if trimester == 1:
+                    self.hh_t1 += 1
+                elif trimester == 2:
+                    self.hh_t2 += 1
+                elif trimester == 3:
+                    self.hh_t3 += 1
+            elif self.p3.get_name() == "RR":
+                if trimester == 1:
+                    self.rr_t1 += 1
+                elif trimester == 2:
+                    self.rr_t2 += 1
+                elif trimester == 3:
+                    self.rr_t3 += 1
+
         elif self.current_trick[3] == highest:
+
             self.leading_player = 4
             self.p4.taken.extend(self.current_trick)
+
+            # add to the corresponding character trimester win count based on what trimester it is
+            if self.p4.get_name() == "Karapet":
+                if trimester == 1:
+                    self.karapet_t1 += 1
+                elif trimester == 2:
+                    self.karapet_t2 += 1
+                elif trimester == 3:
+                    self.karapet_t3 += 1
+            elif self.p4.get_name() == "Papa":
+                if trimester == 1:
+                    self.papa_t1 += 1
+                elif trimester == 2:
+                    self.papa_t2 += 1
+                elif trimester == 3:
+                    self.papa_t3 += 1
+            elif self.p4.get_name() == "HH":
+                if trimester == 1:
+                    self.hh_t1 += 1
+                elif trimester == 2:
+                    self.hh_t2 += 1
+                elif trimester == 3:
+                    self.hh_t3 += 1
+            elif self.p4.get_name() == "RR":
+                if trimester == 1:
+                    self.rr_t1 += 1
+                elif trimester == 2:
+                    self.rr_t2 += 1
+                elif trimester == 3:
+                    self.rr_t3 += 1
+
         else:
             print("Error: no winner found") # should never run
-        
+
+        # write each players' hand to the plays file
+        self.plays_file.write("P1 hand: " + str(self.p1.hand) + "\n")
+        self.plays_file.write("P2 hand: " + str(self.p2.hand) + "\n")
+        self.plays_file.write("P3 hand: " + str(self.p3.hand) + "\n")
+        self.plays_file.write("P4 hand: " + str(self.p4.hand) + "\n")
+
         # write the leader of the trick to the plays file
         self.plays_file.write("Leader: P" + str(self.leading_player) + "\n")
         # write the trick to the plays file
-        self.plays_file.write("Trick: " + str(self.current_trick) + "\n")
+        self.plays_file.write("Trick" + str(self.tricks_played) + ": " + str(self.current_trick) + "\n")
         # write the winner of the trick to the plays file
-        self.plays_file.write("Winner: P" + str(self.leading_player) + "\n")
+        self.plays_file.write("Winner: P" + str(self.leading_player) + "\tTrimester: " + str(trimester) + "\n")
 
         self.plays_file.write("-" * 50 + "\n")
 
@@ -347,6 +512,8 @@ class Game:
             # exit the program
             exit()
 
+        self.tricks_played += 1
+
         # clear the current trick
         self.current_trick = []
 
@@ -362,6 +529,11 @@ class Game:
 
         # setup the nest
         self.setup_nest()
+
+        # write the trump color to the plays file
+        self.plays_file.write("Trump: " + self.trump + "\n")
+        # write the nest to the plays file
+        self.plays_file.write("Nest: " + str(self.nest) + "\n")
 
         # play tricks until all players are out of cards
         # we only have to check the length of one player because they should all have the same number of cards
@@ -490,7 +662,7 @@ class Game:
 
     # run whole game
     def run(self):
-        
+
         # while none of the players' scores are 300 or more, play another round
         while self.p1.score < 300 and self.p2.score < 300 and self.p3.score < 300 and self.p4.score < 300:
             self.play_round()
@@ -519,12 +691,17 @@ class Game:
     
     # close the files
     def end(self):
+        
+        # write trick trimester data to plays file
+        self.plays_file.write("Trick trimester data:\n")
+        self.plays_file.write("Karapet: " + str(self.karapet_t1) + " " + str(self.karapet_t2) + " " + str(self.karapet_t3) + "\n")
+        self.plays_file.write("Papa: " + str(self.papa_t1) + " " + str(self.papa_t2) + " " + str(self.papa_t3) + "\n")
+        self.plays_file.write("HH: " + str(self.hh_t1) + " " + str(self.hh_t2) + " " + str(self.hh_t3) + "\n")
+        self.plays_file.write("RR: " + str(self.rr_t1) + " " + str(self.rr_t2) + " " + str(self.rr_t3) + "\n")
+        
+        # close files
         self.winner_file.close()
-
-
-# BIG TODO: fix the play_card methods in the player classes so they account for being the first to play in a trick
-# or for if the rook is in their hand
-
+        self.plays_file.close()
 
 # player class
 class Player:
@@ -532,7 +709,7 @@ class Player:
     def __init__(self):
 
         self.partner = 0        # partner undeclared
-        self.max_bid = 25        # no max bid (maximum amount the player is willing to bid) declared yet
+        self.max_bid = 25       # no max bid (maximum amount the player is willing to bid) declared yet
         self.current_bid = 0    # no bid started yet
         self.pref_trump = ''    # no preferred trump suit declared yet
         self.score = 0          # everyone starts at 0 points
