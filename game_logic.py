@@ -481,7 +481,7 @@ class Game:
         # write the leader of the trick to the plays file
         self.plays_file.write("Leader: P" + str(self.leading_player) + "\n")
         # write the trick to the plays file
-        self.plays_file.write("Trick" + str(self.tricks_played) + ": " + str(self.current_trick) + "\n")
+        self.plays_file.write("Trick " + str(self.tricks_played) + ": " + str(self.current_trick) + "\n")
         # write the winner of the trick to the plays file
         self.plays_file.write("Winner: P" + str(self.leading_player) + "\tTrimester: " + str(trimester) + "\n")
 
