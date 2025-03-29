@@ -49,21 +49,13 @@ class Game:
 
     def assign_characters(self):
 
-        # randomly choose player 1 to be Karapet or Greek. 2 will be the other
-        if random.randint(1, 2) == 1:
-            self.p1 = Karapet()
-            self.p2 = Papa()
-        else:
-            self.p1 = Papa()
-            self.p2 = Karapet()
-
-        # randomly choose player 3 to be HH or RR. 4 will be the other
-        if random.randint(1, 2) == 1:
-            self.p3 = HH()
-            self.p4 = RR()
-        else:
-            self.p3 = RR()
-            self.p4 = HH()
+        # Assign each player to a random position
+        players = [Karapet(), Papa(), HH(), RR()]
+        random.shuffle(players)
+        self.p1 = players[0]
+        self.p2 = players[1]
+        self.p3 = players[2]
+        self.p4 = players[3]
 
     def __init__(self):
 
