@@ -873,12 +873,22 @@ class Karapet(Player):
     # information the player needs: the current trick, the leading suit, the trump suit
     def play_card(self, trick, lead, trump):
         
-        # if Karapet is the first to play in a trick, he will play his lowest card not in trump
+        # if Karapet is the first to play in a trick, he will play his lowest card not in trump or a counter
         if len(trick) == 0:
-            lowest = 'X20'
+            lowest = 'X20' # TODO: change this to the first card in their hand
             for card in self.hand:
-                if card[0] != trump and card[1:] < lowest[1:]:
+                if card[0] != trump and card[1:] < lowest[1:] and card[1:] != '5' and card[1:] != '10' and card[1:] != '14':
                     lowest = card
+            # if a card wasn't picked, play lowest non-counter trump
+            if lowest == 'X20':
+                for card in self.hand:
+                    if card[0] == trump and card[1:] < lowest[1:]  and card[1:] != '5' and card[1:] != '10' and card[1:] != '14':
+                        lowest = card
+            # if a card wasn't picked, play lowest counter (that's what's left to be picekd from)
+            if lowest == 'X20':
+                for card in self.hand:
+                    if card[1:] < lowest[1:]:
+                        lowest = card
             return lowest
         
         # Karapet focuses on minimizing loss rather than winning, so he will play the lowest card in his hand
@@ -1025,16 +1035,21 @@ class Papa(Player):
             return 'X20'
         # if nothing else, he will play his lowest card in general
         else:
+
+            # tries non-counters first
             lowest = 'X20'
             for card in self.hand:
-                if card[1:] < lowest[1:]:
+                if card[0] != trump and card[1:] != '5' and card[1:] != '10' and card[1:] != '14' and card[1:] < lowest[1:]:
                     lowest = card
-            if lowest != 'X20':
-                return lowest
-            # all else fails, play a random card from hand
-            # this should never happen, but apparently it is, so i'm putting this here for now
-            #else:
-            #    return random.choice(self.hand)
+
+            # will pick lowest overall card if no non-counters are found
+            if lowest == 'X20':
+                for card in self.hand:
+                    if card[1:] < lowest[1:]:
+                        lowest = card
+                
+            return lowest
+
 
 
 # Hideous Hog: aggressive but skilled
@@ -1149,8 +1164,12 @@ class HH(Player):
         else:
             lowest = 'X20'
             for card in self.hand:
-                if card[1:] < lowest[1:]:
+                if card[1:] < lowest[1:] and card[1:] != '5' and card[1:] != '10' and card[1:] != '14':
                     lowest = card
+            if lowest == 'X20':
+                for card in self.hand:
+                    if card[1:] < lowest[1:]:
+                        lowest = card
             return lowest
 
 

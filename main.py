@@ -5,7 +5,7 @@ def main():
     game = Game()
 
     # play 100 games while recording the winner of each game in a text file
-    for i in range(1000):
+    for i in range(100000):
         game.games_played += 1
         game.run()
         
@@ -24,4 +24,9 @@ def main():
         print("Hog wins: ", hh_wins)
         print("Rabbit wins: ", rr_wins)
 
+    # read plays file, print last 5 lines
+    with open("plays.txt", "r") as f:
+        plays = f.readlines()
+        for line in plays[-5:]:
+            print(line.strip())
 main()
