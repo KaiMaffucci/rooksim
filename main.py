@@ -1,16 +1,25 @@
 from game_logic import *
+from time import time
+import sys
 
 def main():
-    
+
+    # If a command line argument is passed, play that number of games
+    try:
+        games_to_play = int(sys.argv[-1])
+    except:
+        games_to_play = 100 # Default
+
+    start_time = time()
     game = Game()
 
-    # play 100 games while recording the winner of each game in a text file
-    for i in range(100000):
+    # play games while recording the winner of each game in a text file
+    for i in range(games_to_play):
         game.games_played += 1
         game.run()
         
-
     game.end()
+    elapsed_time = time() - start_time
 
     # read file line by line, and print the number of wins for each player
     with open("winner.txt", "r") as f:
@@ -23,6 +32,9 @@ def main():
         print("Papa wins: ", papa_wins)
         print("Hog wins: ", hh_wins)
         print("Rabbit wins: ", rr_wins)
+
+    print("Total simulation time for", games_to_play, "games:", elapsed_time, "sec")
+    print("Simulation time per game:", (elapsed_time / games_to_play) * 10**3, "ms")
 
     # read plays file, print last 5 lines
     with open("plays.txt", "r") as f:
