@@ -877,8 +877,18 @@ class Karapet(Player):
         if len(trick) == 0:
             lowest = 'X20' # TODO: change this to the first card in their hand
             for card in self.hand:
-                if card[0] != trump and card[1:] < lowest[1:] and card[1:] != '5' and card[1:] != '10' and card[1:] != '14':
+                if card[0] == lead and card[0] != trump and card[1:] < lowest[1:] and card[1:] != '5' and card[1:] != '10' and card[1:] != '14':
                     lowest = card
+            # if a card wasn't picked, play lowest counter in suit
+            if lowest == 'X20':
+                for card in self.hand:
+                    if card[0] == lead and card[1:] < lowest[1:] and card[1:] != '5' and card[1:] != '10' and card[1:] != '14':
+                        lowest = card
+            # if a card wasn't picked, play lowest non-counter non-trump not in suit led
+            if lowest == 'X20':
+                for card in self.hand:
+                    if card[0] != trump and card[1:] < lowest[1:] and card[1:] != '5' and card[1:] != '10' and card[1:] != '14':
+                        lowest = card
             # if a card wasn't picked, play lowest non-counter trump
             if lowest == 'X20':
                 for card in self.hand:
