@@ -364,7 +364,7 @@ class RR(Player):
         
         # If RR is not leading, randomly pick another player's strategy
         choice = random.choice([Karapet, Papa, HH])
-        return choice.play_card(self, trick, lead, trump)
+        return choice.play_card(self, trick, lead, trump) # fix type conflict?
 
 # TODO: Add comments to the code below
 
@@ -393,12 +393,10 @@ class Game:
         self.papa_t1 = self.papa_t2 = self.papa_t3 = 0
         self.hh_t1 = self.hh_t2 = self.hh_t3 = 0
         self.rr_t1 = self.rr_t2 = self.rr_t3 = 0
-        with open("winner_individuals.txt", "w"), open("plays.txt", "w"):
+        with open("winners.txt", "w"), open("plays.txt", "w"):
             pass
-        self.winner_file = open("winner_individuals.txt", "a")
+        self.winner_file = open("winners.txt", "a")
         self.plays_file = open("plays.txt", "a")
-        self.winner_file.write(f"Game {self.games_played}\n")
-        self.plays_file.write(f"Game {self.games_played}\n")
 
     # Assigns character classes to players randomly
     def assign_characters(self):
@@ -575,11 +573,11 @@ class Game:
     def run(self):
         while all(p.score < 300 for p in [self.p1, self.p2, self.p3, self.p4]):
             self.play_round()
-        self.winner_file.write("This game's winners:\n")
+        self.winner_file.write("This game's winners:")
         for p in [self.p1, self.p2, self.p3, self.p4]:
             if p.score >= 300:
-                self.winner_file.write(f"{p.get_name()}\n")
-        self.winner_file.write(f"{'-'*50}\n")
+                self.winner_file.write(f" {p.get_name()}")
+        self.winner_file.write("\n")
         for p in [self.p1, self.p2, self.p3, self.p4]:
             p.score = 0
         self.assign_characters()
