@@ -21,8 +21,8 @@ def main():
     game.end()
     elapsed_time = time() - start_time
 
-    # read file line by line, and print the number of wins for each player
-    with open("winner.txt", "r") as f:
+    # read file line by line, and print the number of wins for each player 
+    with open("winner_individuals.txt", "r") as f:
         winner = f.readlines()
         karapet_wins = winner.count("Karapet\n")
         papa_wins = winner.count("Papa\n")
