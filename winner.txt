@@ -1,100 +1,4001 @@
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.RR'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Karapet'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
-<class 'game_logic.Papa'> and <class 'game_logic.HH'>
-<class 'game_logic.Papa'> and <class 'game_logic.RR'>
+Game 0
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+HH
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
+RR
+--------------------------------------------------

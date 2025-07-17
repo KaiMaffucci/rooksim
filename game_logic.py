@@ -41,28 +41,28 @@ import random
 import math
 
 
+
+
+
 # game class
 class Game:
 
     def assign_characters(self):
 
-        # randomly choose player 1 to be Karapet or Greek. 2 will be the other
-        if random.randint(1, 2) == 1:
-            self.p1 = Karapet()
-            self.p2 = Papa()
-        else:
-            self.p1 = Papa()
-            self.p2 = Karapet()
-
-        # randomly choose player 3 to be HH or RR. 4 will be the other
-        if random.randint(1, 2) == 1:
-            self.p3 = HH()
-            self.p4 = RR()
-        else:
-            self.p3 = RR()
-            self.p4 = HH()
+        # Assign each player to a random position
+        players = [Karapet(), Papa(), HH(), RR()]
+        random.shuffle(players)
+        self.p1 = players[0]
+        self.p2 = players[1]
+        self.p3 = players[2]
+        self.p4 = players[3]
 
     def __init__(self):
+
+        # counts how many games have been played
+        self.games_played = 0
+        # counts how many tricks have been played in the round
+        self.tricks_played = 0
 
         # later will specify certain characters
         # assume 1 & 3 will be partners, 2 & 4 will be partners
@@ -90,12 +90,37 @@ class Game:
         self.winning_bid = 0 # the highest bid made by a player
         self.trump = '' # the trump suit for the round
 
+        # trimester wins of each character
+        self.karapet_t1 = 0
+        self.karapet_t2 = 0
+        self.karapet_t3 = 0
+        self.papa_t1 = 0
+        self.papa_t2 = 0
+        self.papa_t3 = 0
+        self.hh_t1 = 0
+        self.hh_t2 = 0
+        self.hh_t3 = 0
+        self.rr_t1 = 0
+        self.rr_t2 = 0
+        self.rr_t3 = 0
+
         # create text file which will store the winner of each game
         # if there's a file already, overwrite it
         self.winner_file = open("winner.txt", "w")
         self.winner_file.close()
         # open the file again in append mode
         self.winner_file = open("winner.txt", "a")
+        # write which game it is to winner file
+        self.winner_file.write("Game " + str(self.games_played) + "\n")
+
+        # create text file which will store all the play-by-plays
+        # if there's a file already, overwrite it
+        self.plays_file = open("plays.txt", "w")
+        self.plays_file.close()
+        # open the file again in append mode
+        self.plays_file = open("plays.txt", "a")
+        # write which game it is to plays file
+        self.plays_file.write("Game " + str(self.games_played) + "\n")
 
 
     # deals starting hand and assigns partners
@@ -136,17 +161,33 @@ class Game:
     # make players bid
     def all_bid(self):
         
-        # bid loop until all players have passed
-        while not (self.p1.passing and self.p2.passing and self.p3.passing and self.p4.passing):
-            # player 1 bids
-            self.p1.bid()
-            # player 2 bids
-            self.p2.bid()
-            # player 3 bids
-            self.p3.bid()
-            # player 4 bids
-            self.p4.bid()
-        
+        # bid loop until exactly 3 players are passing
+        while self.p1.passing + self.p2.passing + self.p3.passing + self.p4.passing < 3:
+            # p1 bids
+            if not self.p1.passing:
+                self.p1.bid()
+            # p2 bids
+            if not self.p2.passing:
+                self.p2.bid()
+            # p3 bids
+            if not self.p3.passing:
+                self.p3.bid()
+            # p4 bids
+            if not self.p4.passing:
+                self.p4.bid()
+
+        # print everyone's bids (test code)
+        #print("P1 bid:", self.p1.max_bid)
+        #print("P2 bid:", self.p2.max_bid)
+        #print("P3 bid:", self.p3.max_bid)
+        #print("P4 bid:", self.p4.max_bid)
+
+        # record the bids in the plays file
+        self.plays_file.write("P1 " + self.p1.get_name() + " max bid: " + str(self.p1.max_bid) + "\n")
+        self.plays_file.write("P2 " + self.p2.get_name() + " max bid: " + str(self.p2.max_bid) + "\n")
+        self.plays_file.write("P3 " + self.p3.get_name() + " max bid: " + str(self.p3.max_bid) + "\n")
+        self.plays_file.write("P4 " + self.p4.get_name() + " max bid: " + str(self.p4.max_bid) + "\n")
+
         # determine the winning bid and bidder
         self.winning_bid = max(self.p1.current_bid, self.p2.current_bid, self.p3.current_bid, self.p4.current_bid)
         if self.p1.current_bid == self.winning_bid:
@@ -160,12 +201,13 @@ class Game:
         else:
             print("Error: no bid winner found") # should never run
 
+        # record winning bidder and bid in the plays file
+        self.plays_file.write("Winning bidder: P" + str(self.bid_winner) + " " + str(self.winning_bid) + "\n")
+        self.plays_file.write("-" * 50 + "\n")
+    
 
     # method to setup the nest
     def setup_nest(self):
-
-        # print nest (test code)
-        #print("Nest:", self.nest)
 
         # whoever won the bid gets to take the nest (TODO: if a player gets the nest, they should also put 5 cards back)
         # if the bid winner is 1, they get the nest
@@ -202,11 +244,17 @@ class Game:
 
     # play a single trick
     def play_trick(self):
-        
-        # print leading player
-        #print("Leading player:", self.leading_player)
 
         self.leading_suit = '' # reset the leading suit
+
+        # calculate which third of the game we're in
+        trimester = self.tricks_played % 9
+        if trimester == 0 or trimester == 1 or trimester == 2:
+            trimester = 1
+        elif trimester == 3 or trimester == 4 or trimester == 5:
+            trimester = 2
+        elif trimester == 6 or trimester == 7 or trimester == 8:
+            trimester = 3
 
         # if it's the first trick of the game, p1 leads
         if self.leading_player == 0:
@@ -245,7 +293,7 @@ class Game:
         else:
             print("Error: no leading player found") # should never run
 
-        # if there is a None in the current trick, print an error message
+        # if there is a None in the current trick, print an error message (this should never happen)
         if None in self.current_trick:
             print("Error: None in current trick")
             # print leading player
@@ -263,26 +311,174 @@ class Game:
         # determine winner of the trick
         highest = 'R0'
         for card in self.current_trick:
-            if card[0] == self.trump and card[1:] > highest[1:]:
-                highest = card
-            elif card[0] == self.leading_suit and card[1:] > highest[1:]:
-                highest = card
-        # give the winner of the trick the cards in the trick and set them as the leading player for the next trick
+            if  card == 'X20' or highest == 'X20':
+                highest = 'X20'
+            else:
+                if card[0] == self.trump and card[1:] > highest[1:]:
+                    highest = card
+                elif card[0] == self.leading_suit and card[1:] > highest[1:]:
+                    highest = card
+
+        # give the winner of the trick the cards in the trick,
+        # set them as the leading player for the next trick,
+        # and add to their corresponding trimester win count (TODO: make this look a lot better)
         if self.current_trick[0] == highest:
+
             self.leading_player = 1
             self.p1.taken.extend(self.current_trick)
+            # add to the corresponding character trimester win count based on what trimester it is
+            if self.p1.get_name() == "Karapet":
+                if trimester == 1:
+                    self.karapet_t1 += 1
+                elif trimester == 2:
+                    self.karapet_t2 += 1
+                elif trimester == 3:
+                    self.karapet_t3 += 1
+            elif self.p1.get_name() == "Papa":
+                if trimester == 1:
+                    self.papa_t1 += 1
+                elif trimester == 2:
+                    self.papa_t2 += 1
+                elif trimester == 3:
+                    self.papa_t3 += 1
+            elif self.p1.get_name() == "HH":
+                if trimester == 1:
+                    self.hh_t1 += 1
+                elif trimester == 2:
+                    self.hh_t2 += 1
+                elif trimester == 3:
+                    self.hh_t3 += 1
+            elif self.p1.get_name() == "RR":
+                if trimester == 1:
+                    self.rr_t1 += 1
+                elif trimester == 2:
+                    self.rr_t2 += 1
+                elif trimester == 3:
+                    self.rr_t3 += 1
+
         elif self.current_trick[1] == highest:
+
             self.leading_player = 2
             self.p2.taken.extend(self.current_trick)
+
+            # TODO: add to the corresponding character trimester win count based on what trimester it is
+            if self.p2.get_name() == "Karapet":
+                if trimester == 1:
+                    self.karapet_t1 += 1
+                elif trimester == 2:
+                    self.karapet_t2 += 1
+                elif trimester == 3:
+                    self.karapet_t3 += 1
+            elif self.p2.get_name() == "Papa":
+                if trimester == 1:
+                    self.papa_t1 += 1
+                elif trimester == 2:
+                    self.papa_t2 += 1
+                elif trimester == 3:
+                    self.papa_t3 += 1
+            elif self.p2.get_name() == "HH":
+                if trimester == 1:
+                    self.hh_t1 += 1
+                elif trimester == 2:
+                    self.hh_t2 += 1
+                elif trimester == 3:
+                    self.hh_t3 += 1
+            elif self.p2.get_name() == "RR":
+                if trimester == 1:
+                    self.rr_t1 += 1
+                elif trimester == 2:
+                    self.rr_t2 += 1
+                elif trimester == 3:
+                    self.rr_t3 += 1
+
         elif self.current_trick[2] == highest:
+
             self.leading_player = 3
             self.p3.taken.extend(self.current_trick)
+
+            # add to the corresponding character trimester win count based on what trimester it is
+            if self.p3.get_name() == "Karapet":
+                if trimester == 1:
+                    self.karapet_t1 += 1
+                elif trimester == 2:
+                    self.karapet_t2 += 1
+                elif trimester == 3:
+                    self.karapet_t3 += 1
+            elif self.p3.get_name() == "Papa":
+                if trimester == 1:
+                    self.papa_t1 += 1
+                elif trimester == 2:
+                    self.papa_t2 += 1
+                elif trimester == 3:
+                    self.papa_t3 += 1
+            elif self.p3.get_name() == "HH":
+                if trimester == 1:
+                    self.hh_t1 += 1
+                elif trimester == 2:
+                    self.hh_t2 += 1
+                elif trimester == 3:
+                    self.hh_t3 += 1
+            elif self.p3.get_name() == "RR":
+                if trimester == 1:
+                    self.rr_t1 += 1
+                elif trimester == 2:
+                    self.rr_t2 += 1
+                elif trimester == 3:
+                    self.rr_t3 += 1
+
         elif self.current_trick[3] == highest:
+
             self.leading_player = 4
             self.p4.taken.extend(self.current_trick)
+
+            # add to the corresponding character trimester win count based on what trimester it is
+            if self.p4.get_name() == "Karapet":
+                if trimester == 1:
+                    self.karapet_t1 += 1
+                elif trimester == 2:
+                    self.karapet_t2 += 1
+                elif trimester == 3:
+                    self.karapet_t3 += 1
+            elif self.p4.get_name() == "Papa":
+                if trimester == 1:
+                    self.papa_t1 += 1
+                elif trimester == 2:
+                    self.papa_t2 += 1
+                elif trimester == 3:
+                    self.papa_t3 += 1
+            elif self.p4.get_name() == "HH":
+                if trimester == 1:
+                    self.hh_t1 += 1
+                elif trimester == 2:
+                    self.hh_t2 += 1
+                elif trimester == 3:
+                    self.hh_t3 += 1
+            elif self.p4.get_name() == "RR":
+                if trimester == 1:
+                    self.rr_t1 += 1
+                elif trimester == 2:
+                    self.rr_t2 += 1
+                elif trimester == 3:
+                    self.rr_t3 += 1
+
         else:
             print("Error: no winner found") # should never run
-        
+
+        # write each players' hand to the plays file
+        self.plays_file.write("P1 hand: " + str(self.p1.hand) + "\n")
+        self.plays_file.write("P2 hand: " + str(self.p2.hand) + "\n")
+        self.plays_file.write("P3 hand: " + str(self.p3.hand) + "\n")
+        self.plays_file.write("P4 hand: " + str(self.p4.hand) + "\n")
+
+        # write the leader of the trick to the plays file
+        self.plays_file.write("Leader: P" + str(self.leading_player) + "\n")
+        # write the trick to the plays file
+        self.plays_file.write("Trick " + str(self.tricks_played) + ": " + str(self.current_trick) + "\n")
+        # write the winner of the trick to the plays file
+        self.plays_file.write("Winner: P" + str(self.leading_player) + "\tTrimester: " + str(trimester) + "\n")
+
+        self.plays_file.write("-" * 50 + "\n")
+
         # clear the cards in the current trick from the players' hands
         # note: it would be more efficient to do this in each player's play_card method, but this is easier for now
         for card in self.current_trick:
@@ -308,6 +504,8 @@ class Game:
             # exit the program
             exit()
 
+        self.tricks_played += 1
+
         # clear the current trick
         self.current_trick = []
 
@@ -323,6 +521,11 @@ class Game:
 
         # setup the nest
         self.setup_nest()
+
+        # write the trump color to the plays file
+        self.plays_file.write("Trump: " + self.trump + "\n")
+        # write the nest to the plays file
+        self.plays_file.write("Nest: " + str(self.nest) + "\n")
 
         # play tricks until all players are out of cards
         # we only have to check the length of one player because they should all have the same number of cards
@@ -451,24 +654,23 @@ class Game:
 
     # run whole game
     def run(self):
-        
+
         # while none of the players' scores are 300 or more, play another round
         while self.p1.score < 300 and self.p2.score < 300 and self.p3.score < 300 and self.p4.score < 300:
             self.play_round()
         
-        # determine the winner
-        # TODO: refactor to also store the winner's partner
+        # determine the winner and store which player(s) (Papa, RR, etc) won
+        self.winner_file.write("This game\'s winners:\n")
         if self.p1.score >= 300:
-            # store which player (Papa, RR, etc) won and their partner in the winner file
-            self.winner_file.write(str(type(self.p1)) + " and " + str(type(self.p3)) + "\n")
-        elif self.p2.score >= 300:
-            self.winner_file.write(str(type(self.p2)) + " and " + str(type(self.p4)) + "\n")
-        elif self.p3.score >= 300:
-            self.winner_file.write(str(type(self.p1)) + " and " + str(type(self.p3)) + "\n")
-        elif self.p4.score >= 300:
-            self.winner_file.write(str(type(self.p2)) + " and " + str(type(self.p4))+ "\n")
-        else:
-            print("Error: no winner found")
+            self.winner_file.write(self.p1.get_name() + "\n")
+        if self.p2.score >= 300:
+            self.winner_file.write(self.p2.get_name() + "\n")
+        if self.p3.score >= 300:
+            self.winner_file.write(self.p3.get_name() + "\n")
+        if self.p4.score >= 300:
+            self.winner_file.write(self.p4.get_name() + "\n")
+        
+        self.winner_file.write("-" * 50 + "\n")
         
         # nuke scores for new game
         self.p1.score = 0
@@ -478,11 +680,20 @@ class Game:
 
         # assign characters again for variety
         self.assign_characters()
-
-
-# BIG TODO: fix the play_card methods in the player classes so they account for being the first to play in a trick
-# or for if the rook is in their hand
-
+    
+    # close the files
+    def end(self):
+        
+        # write trick trimester data to plays file
+        self.plays_file.write("Trick trimester data:\n")
+        self.plays_file.write("Karapet: " + str(self.karapet_t1) + " " + str(self.karapet_t2) + " " + str(self.karapet_t3) + "\n")
+        self.plays_file.write("Papa: " + str(self.papa_t1) + " " + str(self.papa_t2) + " " + str(self.papa_t3) + "\n")
+        self.plays_file.write("HH: " + str(self.hh_t1) + " " + str(self.hh_t2) + " " + str(self.hh_t3) + "\n")
+        self.plays_file.write("RR: " + str(self.rr_t1) + " " + str(self.rr_t2) + " " + str(self.rr_t3) + "\n")
+        
+        # close files
+        self.winner_file.close()
+        self.plays_file.close()
 
 # player class
 class Player:
@@ -490,7 +701,7 @@ class Player:
     def __init__(self):
 
         self.partner = 0        # partner undeclared
-        self.max_bid = 0        # no max bid (maximum amount the player is willing to bid) declared yet
+        self.max_bid = 25       # no max bid (maximum amount the player is willing to bid) declared yet
         self.current_bid = 0    # no bid started yet
         self.pref_trump = ''    # no preferred trump suit declared yet
         self.score = 0          # everyone starts at 0 points
@@ -498,6 +709,10 @@ class Player:
         self.taken = []         # no tricks taken yet
         self.pts_taken = 0      # no points from tricks calculated yet
         self.passing = False    # whether the player is passing on bidding yet (for bidding phase, starts as false)
+
+    # helper function to get just the name from the class
+    def get_name(self):
+        return str(type(self)).split('.')[-1][:-2]
 
     # calculate the preferred trump suit
     def calc_trump(self):
@@ -658,12 +873,32 @@ class Karapet(Player):
     # information the player needs: the current trick, the leading suit, the trump suit
     def play_card(self, trick, lead, trump):
         
-        # if Karapet is the first to play in a trick, he will play his lowest card not in trump
+        # if Karapet is the first to play in a trick, he will play his lowest card not in trump or a counter
         if len(trick) == 0:
-            lowest = 'X20'
+            lowest = 'X20' # TODO: change this to the first card in their hand
             for card in self.hand:
-                if card[0] != trump and card[1:] < lowest[1:]:
+                if card[0] == lead and card[0] != trump and card[1:] < lowest[1:] and card[1:] != '5' and card[1:] != '10' and card[1:] != '14':
                     lowest = card
+            # if a card wasn't picked, play lowest counter in suit
+            if lowest == 'X20':
+                for card in self.hand:
+                    if card[0] == lead and card[1:] < lowest[1:] and card[1:] != '5' and card[1:] != '10' and card[1:] != '14':
+                        lowest = card
+            # if a card wasn't picked, play lowest non-counter non-trump not in suit led
+            if lowest == 'X20':
+                for card in self.hand:
+                    if card[0] != trump and card[1:] < lowest[1:] and card[1:] != '5' and card[1:] != '10' and card[1:] != '14':
+                        lowest = card
+            # if a card wasn't picked, play lowest non-counter trump
+            if lowest == 'X20':
+                for card in self.hand:
+                    if card[0] == trump and card[1:] < lowest[1:]  and card[1:] != '5' and card[1:] != '10' and card[1:] != '14':
+                        lowest = card
+            # if a card wasn't picked, play lowest counter (that's what's left to be picekd from)
+            if lowest == 'X20':
+                for card in self.hand:
+                    if card[1:] < lowest[1:]:
+                        lowest = card
             return lowest
         
         # Karapet focuses on minimizing loss rather than winning, so he will play the lowest card in his hand
@@ -810,16 +1045,21 @@ class Papa(Player):
             return 'X20'
         # if nothing else, he will play his lowest card in general
         else:
+
+            # tries non-counters first
             lowest = 'X20'
             for card in self.hand:
-                if card[1:] < lowest[1:]:
+                if card[0] != trump and card[1:] != '5' and card[1:] != '10' and card[1:] != '14' and card[1:] < lowest[1:]:
                     lowest = card
-            if lowest != 'X20':
-                return lowest
-            # all else fails, play a random card from hand
-            # this should never happen, but apparently it is, so i'm putting this here for now
-            #else:
-            #    return random.choice(self.hand)
+
+            # will pick lowest overall card if no non-counters are found
+            if lowest == 'X20':
+                for card in self.hand:
+                    if card[1:] < lowest[1:]:
+                        lowest = card
+                
+            return lowest
+
 
 
 # Hideous Hog: aggressive but skilled
@@ -934,8 +1174,12 @@ class HH(Player):
         else:
             lowest = 'X20'
             for card in self.hand:
-                if card[1:] < lowest[1:]:
+                if card[1:] < lowest[1:] and card[1:] != '5' and card[1:] != '10' and card[1:] != '14':
                     lowest = card
+            if lowest == 'X20':
+                for card in self.hand:
+                    if card[1:] < lowest[1:]:
+                        lowest = card
             return lowest
 
 
