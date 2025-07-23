@@ -16,8 +16,14 @@ k: number of observed successes in draw/sample
 returns the probability of observing k successes in n draws
 """
 def hyper(N, K, n, k):
+
+    # test code: print parameters
+    #print(f"hyper(N={N}, K={K}, n={n}, k={k})")
+
     if k > K or n > N or k > n:
         return 0
+    if N - K <= n - k:
+        return 1 / C(N, n)  # if all remaining cards are drawn, probability is 1
     return (C(K, k) * C(N - K, n - k)) / C(N, n)
 
 """
@@ -43,19 +49,55 @@ def prob(d_0, t_0, d_r, h, t_h):
 
     return total_prob    
 
+"""
+Same as prob, but calculates the probability of drawing at least one card of that type in hand
+"""
+def prob_range(d_0, t_0, d_r, h, t_h):
+    
+    total_prob = 0
+    # iterate through all possible numbers of that type of card in the hand
+    for t_h_i in range(t_h, h + 1):
+        total_prob += prob(d_0, t_0, d_r, h, t_h_i)
+    return total_prob
+
+"""
+Calculates all scenarios for all players for the start of a given trimester
+trim = which trimester is about to begin (1 means start of game)
+"""
+def all_scenarios_for_trimester(trim):
+    
+    d_0 = 41
+    t_0 = 21 # number of cards for Karapet scenario 1
+    d_r = 5 + (trim - 1)*3*4 # nest and tricks removed if trimester warrants it
+    h = 9 - (trim - 1)*3 # hand size based on trimester
+
+    # Karapet leading scenario 1
+    prob_for_one_or_more = prob_range(d_0, t_0, d_r, h, 1)
+    print(f"Trimester {trim}:")
+    print(f"Probability of drawing at least one card of that type in hand: {prob_for_one_or_more:.4f}")
+
+    # TODO: add other scenarios here
+
+    return 0
+
 
 if __name__ == "__main__":
 
     # Rook (Kentucky Discard) deck size
+    """
     d_0 = 41
     t_0 = 21 # number of cards for Karapet scenario 1
     d_r = 5 # only nest removed
     h = 9 # hand size
     
-    prob_for_one_or_more = 0
+    karapet_leading_scenario_1 = prob_range(d_0, t_0, d_r, h, 1)
+    print(f"Probability of drawing at least one card of that type in hand: {karapet_leading_scenario_1:.4f}")
+    """
+    
     # calculate probability of drawing at least one card of that type in hand
-    for t_h in range(1, h + 1):
-        prob_value = prob(d_0, t_0, d_r, h, t_h)
-        prob_for_one_or_more += prob_value
+    all_scenarios_for_trimester(1)
+    all_scenarios_for_trimester(2)
+    all_scenarios_for_trimester(3)
 
-    print(f"Probability of drawing at least one card of that type in hand: {prob_for_one_or_more:.4f}")
+
+    #all_scenarios_for_trimester(3)
