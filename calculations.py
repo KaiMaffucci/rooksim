@@ -11,43 +11,51 @@ Hypergeometric distribution
 key parameters:
 N: population size
 K: number of successes in the population
-n: number of draws
-k: number of observed successes
+n: number of draws (sample size)
+k: number of observed successes in draw/sample
 returns the probability of observing k successes in n draws
 """
-def hypergeometric(N, K, n, k):
+def hyper(N, K, n, k):
     if k > K or n > N or k > n:
         return 0
     return (C(K, k) * C(N - K, n - k)) / C(N, n)
 
-# Probability of drawing a hand of all cards of a certain type (in one scenario)
-def hand_prob(new_deck_size, cards_of_type, cards_of_type_taken_out, hand_size, cards_of_type_in_hand):
-    return hypergeometric(new_deck_size, cards_of_type - cards_of_type_taken_out, hand_size, cards_of_type_in_hand)
+"""
+Probability of a hand with a certain amount of cards of a certain type being drawn
+d_0: initial deck size
+t_0: initial number of that type of card in the deck
+d_r: total cards removed from the deck, from nest or tricks
+h: hand size
+t_h: number of cards of certain type in the hand
+returns the probability of drawing t_h cards of that type in a hand of size h
+"""
+def prob(d_0, t_0, d_r, h, t_h):
+     
+    d_n = d_0 - d_r  # remaining deck size
 
-# Probability that one hand scenario occurs given a deck scenario
-def combined_prob_for_scenario(deck_size, cards_of_type, total_cards_taken_out, cards_of_type_taken_out, hand_size, cards_of_type_in_hand):
-    
-    return hypergeometric(deck_size, cards_of_type, total_cards_taken_out, cards_of_type_taken_out) * hand_prob(deck_size - total_cards_taken_out, cards_of_type, cards_of_type_taken_out, hand_size, cards_of_type_in_hand)
-
-# Total probability of drawing a hand of all cards of a certain type
-def total_hand_prob(deck_size, cards_of_type, total_cards_taken_out, hand_size, cards_of_type_in_hand):
-    
+    upper_limit = min(d_r, t_0) # maximum number of cards of that type that can be removed
     total_prob = 0
-    for cards_of_type_currently_out in range(cards_of_type + 1):
-        total_prob += combined_prob_for_scenario(deck_size, cards_of_type, total_cards_taken_out, cards_of_type_currently_out, hand_size, cards_of_type_in_hand)
 
-    return total_prob
+    # iterate through all possible numbers of that type of card removed
+    for t_r_i in range(upper_limit + 1):
+        t_n_i = t_0 - t_r_i  # remaining cards of that type
+        total_prob += hyper(d_0, t_0, d_r, t_r_i) * hyper(d_n, t_n_i, h, t_h)
+
+    return total_prob    
+
 
 if __name__ == "__main__":
 
     # Rook (Kentucky Discard) deck size
-    initial_deck_size = 41
+    d_0 = 41
+    t_0 = 21 # number of cards for Karapet scenario 1
+    d_r = 5 # only nest removed
+    h = 9 # hand size
+    
+    prob_for_one_or_more = 0
+    # calculate probability of drawing at least one card of that type in hand
+    for t_h in range(1, h + 1):
+        prob_value = prob(d_0, t_0, d_r, h, t_h)
+        prob_for_one_or_more += prob_value
 
-    # Karapet leading, scenario 1, first trimester
-    cards_of_type = 21 # in this case, number of non-counter, non-trumps
-    total_cards_taken_out = 5 # just the nest, like in the start of the game
-    hand_size = 9
-
-    # Calculate the probability of drawing a hand with a card of the specified type
-    probability = total_hand_prob(initial_deck_size, cards_of_type, total_cards_taken_out, hand_size, 1)
-    print("Probability of drawing a hand fitting this scenario:", probability)
+    print(f"Probability of drawing at least one card of that type in hand: {prob_for_one_or_more:.4f}")
