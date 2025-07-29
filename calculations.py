@@ -84,63 +84,38 @@ def all_scenarios_for_trimester(trim):
 
 if __name__ == "__main__":
 
-    # Rook (Kentucky Discard) deck size
-    """
-    d_0 = 41
-    t_0 = 21 # number of cards for Karapet scenario 1
-    d_r = 5 # only nest removed
-    h = 9 # hand size
-    
-    karapet_leading_scenario_1 = prob_range(d_0, t_0, d_r, h, 1)
-    print(f"Probability of drawing at least one card of that type in hand: {karapet_leading_scenario_1:.4f}")
-    """
-    
-    # calculate probability of drawing at least one card of that type in hand
-    """all_scenarios_for_trimester(1)
-    all_scenarios_for_trimester(2)
-    all_scenarios_for_trimester(3)"""
+    # Karapet vs The Hog
 
     # probability that a player has at least one low card (5-9) in hand in trimester 1
     d_0 = 41
     t_0 = 4*5  # 5-9 cards in the deck
     d_r = 5  # nest removed
     h = 9  # hand size
-    t_h = 1  # at least one low card in hand
-    prob_low_card = prob_range(d_0, t_0, d_r, h, t_h)
-    print(f"Probability of drawing at least one low card (5-9) in hand: {prob_low_card:.4f}")
-    
+    prob_low_card = prob_range(d_0, t_0, d_r, h, 1)
+    print("Karapet")
+    print(f"T1: Probability of drawing at least one low card (5-9) in hand: {prob_low_card:.4f}")
+    # probability of 4 or more low cards in hand
+    prob_low_card_3 = prob_range(d_0, t_0, d_r, h, 4)
+    print(f"T3: Probability of drawing at least 4 low cards (5-9) in hand: {prob_low_card_3:.4f}")
+    # probability of 7 or more low cards in hand
+    prob_low_card_3 = prob_range(d_0, t_0, d_r, h, 7)
+    print(f"T3: Probability of drawing at least 7 low cards (5-9) in hand: {prob_low_card_3:.4f}")
+
+    print("The Hog")
     # probability that a player has at least one high card (10-14 + rook) in hand in trimester 1
     t_0 = 4*5 + 1  # 10-14 cards + rook in the deck
-    t_h = 1  # at least one high card in hand
-    prob_high_card = prob_range(d_0, t_0, d_r, h, t_h)
-    print(f"Probability of drawing at least one high card (10-14 + rook) in hand: {prob_high_card:.4f}")
+    prob_high_card = prob_range(d_0, t_0, d_r, h, 1)
+    print(f"T1: Probability of drawing at least one high card (10-14 + rook) in hand: {prob_high_card:.4f}")
+    # probability of 4 or more high cards in hand
+    prob_high_card_3 = prob_range(d_0, t_0, d_r, h, 4)
+    print(f"T2: Probability of drawing at least 4 high cards (10-14 + rook) in hand: {prob_high_card_3:.4f}")
+    # probability of 7 or more high cards in hand
+    prob_high_card_3 = prob_range(d_0, t_0, d_r, h, 7)
+    print(f"T3: Probability of drawing at least 7 high cards (10-14 + rook) in hand: {prob_high_card_3:.4f}")
 
-    # same probabilities for trimester 2, except we assume target cards were removed from each trick in the last semester (so 3 less target cards)
-    d_r = 5 + 3*4  # nest and tricks removed
-    h = 6  # hand size
-    t_0 = 4*5  # 5-9 cards in the deck
-    prob_low_card_trimester_2 = prob_range(d_0, t_0, d_r, h, t_h)
-    print(f"Probability of drawing at least one low card (5-9) in hand in trimester 2: {prob_low_card_trimester_2:.9f}")
-    prob_low_card_trimester_2 = prob_range(d_0, t_0, d_r, h, t_h, 3) # lower bound is 3 because we assume 3 low cards were removed during each previous trick
-    print(f"Probability of drawing at least one low card (5-9) in hand in trimester 2 (assuming 3 were played already): {prob_low_card_trimester_2:.9f}")
-    
-    t_0 = 4*5 + 1  # 10-14 cards + rook in the deck
-    prob_high_card_trimester_2 = prob_range(d_0, t_0, d_r, h, t_h)
-    print(f"Probability of drawing at least one high card (10-14 + rook) in hand in trimester 2: {prob_high_card_trimester_2:.4f}")
-    prob_high_card_trimester_2 = prob_range(d_0, t_0, d_r, h, t_h, 3)  # lower bound is 3 because we assume 3 high cards were removed during each previous trick
-    print(f"Probability of drawing at least one high card (10-14 + rook) in hand in trimester 2 (assuming 3 were played already): {prob_high_card_trimester_2:.4f}")
-    
-    # same probabilities for trimester 3
-    d_r = 5 + 6*4  # nest and tricks removed
-    h = 3  # hand size
-    t_0 = 4*5  # 5-9 cards in the deck
-    prob_low_card_trimester_3 = prob_range(d_0, t_0, d_r, h, t_h)
-    print(f"Probability of drawing at least one low card (5-9) in hand in trimester 3: {prob_low_card_trimester_3:.4f}")
-    prob_low_card_trimester_3 = prob_range(d_0, t_0, d_r, h, t_h, 6)  # lower bound is 6 because we assume 6 low cards were removed during each previous trick 
-    print(f"Probability of drawing at least one low card (5-9) in hand in trimester 3 (assuming 6 were played already): {prob_low_card_trimester_3:.4f}")
-    
-    t_0 = 4*5 + 1  # 10-14 cards + rook in the deck
-    prob_high_card_trimester_3 = prob_range(d_0, t_0, d_r, h, t_h)
-    print(f"Probability of drawing at least one high card (10-14 + rook) in hand in trimester 3: {prob_high_card_trimester_3:.4f}")
-    prob_high_card_trimester_3 = prob_range(d_0, t_0, d_r, h, t_h, 6)  # lower bound is 6 because we assume 6 high cards were removed during each previous trick
-    print(f"Probability of drawing at least one high card (10-14 + rook) in hand in trimester 3 (assuming 6 were played already): {prob_high_card_trimester_3:.4f}")
+    print("Papa comes for the hog")
+    print("T1 is low for papa b/c while he has a 50/50 chance of beating hog in a vacuum, papa will only try to beat hog if he sees the hog's play")
+    prob_papa = prob_range(d_0, t_0, d_r, h, 2)
+    print(f"T2: Probability of drawing at least 2 high cards (10-14 + rook) in hand: {prob_papa:.4f}")
+    prob_papa_3 = prob_range(d_0, t_0, d_r, h, 4)
+    print(f"T3: Probability of drawing at least 4 high cards (10-14 + rook) in hand: {prob_papa_3:.4f}")
