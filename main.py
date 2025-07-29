@@ -57,10 +57,84 @@ def main():
     print("Total simulation time for", games_to_play, "games:", elapsed_time, "sec")
     print("Simulation time per game:", (elapsed_time / games_to_play) * 10**3, "ms")
 
+    trimester_1_wins = {"Karapet": 0, "Papa": 0, "HH": 0, "RR": 0}
+    trimester_2_wins = {"Karapet": 0, "Papa": 0, "HH": 0, "RR": 0}
+    trimester_3_wins = {"Karapet": 0, "Papa": 0, "HH": 0, "RR": 0}
+    total_trimester_wins = {"Karapet": 0, "Papa": 0, "HH": 0, "RR": 0}
+
     # read plays file, print last 5 lines
     with open("plays.txt", "r") as f:
         plays = f.readlines()
         last_lines = plays[-5:] if len(plays) >= 5 else plays
         for line in last_lines:
+
             print(line.strip())
+
+            if "Karapet" in line:
+
+                # Increment Karapet's wins in each trimester based on the first number in the line
+                trimester_1_wins["Karapet"] += int(line.split()[1])
+                trimester_2_wins["Karapet"] += int(line.split()[2])
+                trimester_3_wins["Karapet"] += int(line.split()[3])
+                total_trimester_wins["Karapet"] += int(line.split()[1]) + int(line.split()[2]) + int(line.split()[3])
+            
+            elif "Papa" in line:
+
+                # Increment Papa's wins in each trimester based on the first number in the line
+                trimester_1_wins["Papa"] += int(line.split()[1])
+                trimester_2_wins["Papa"] += int(line.split()[2])
+                trimester_3_wins["Papa"] += int(line.split()[3])
+                total_trimester_wins["Papa"] += int(line.split()[1]) + int(line.split()[2]) + int(line.split()[3])
+            
+            elif "HH" in line:
+                # Increment HH's wins in each trimester based on the first number in the line
+                trimester_1_wins["HH"] += int(line.split()[1])
+                trimester_2_wins["HH"] += int(line.split()[2])
+                trimester_3_wins["HH"] += int(line.split()[3])
+                total_trimester_wins["HH"] += int(line.split()[1]) + int(line.split()[2]) + int(line.split()[3])
+            
+            elif "RR" in line:
+                # Increment RR's wins in each trimester based on the first number in the line
+                trimester_1_wins["RR"] += int(line.split()[1])
+                trimester_2_wins["RR"] += int(line.split()[2])
+                trimester_3_wins["RR"] += int(line.split()[3])
+                total_trimester_wins["RR"] += int(line.split()[1]) + int(line.split()[2]) + int(line.split()[3])
+    
+    total_trimesters_played = sum(total_trimester_wins.values())
+    print("\nTotal trimesters played:", total_trimesters_played)
+
+    print("\nTotal trimester wins:")
+    for player, wins in total_trimester_wins.items():
+        print(f"{player}: {wins}")
+
+    total_trimester_1_wins = sum(trimester_1_wins.values())
+    total_trimester_2_wins = sum(trimester_2_wins.values())
+    total_trimester_3_wins = sum(trimester_3_wins.values())
+
+    # Print trimester wins
+    print("\nTrimester 1 wins:")
+    for player, wins in trimester_1_wins.items():
+        print(f"{player}: {wins}")
+        # calculate and print percentage of wins for each player in trimester 1
+        if total_trimesters_played > 0:
+            percentage = (wins / total_trimester_1_wins) * 100
+            print(f"{player} win percentage in trimester 1: {percentage:.2f}%")
+    
+    print("\nTrimester 2 wins:")
+    for player, wins in trimester_2_wins.items():
+        print(f"{player}: {wins}")
+        # calculate and print percentage of wins for each player in trimester 2
+        if total_trimesters_played > 0:
+            percentage = (wins / total_trimester_2_wins) * 100
+            print(f"{player} win percentage in trimester 2: {percentage:.2f}%")
+    
+    print("\nTrimester 3 wins:")
+    for player, wins in trimester_3_wins.items():
+        print(f"{player}: {wins}")
+        # calculate and print percentage of wins for each player in trimester 3
+        if total_trimesters_played > 0:
+            percentage = (wins / total_trimester_3_wins) * 100
+            print(f"{player} win percentage in trimester 3: {percentage:.2f}%")
+    
+
 main()

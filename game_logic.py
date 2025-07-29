@@ -16,7 +16,7 @@ Card format: [Suit][Number], e.g., R12, G7, Y5, B14, X20 (rook).
 import random
 import math
 
-random.seed(1)
+random.seed(69)
 
 COUNTER_RANKS = ('5', '10', '14', '20')  # Counter cards in Rook
 
