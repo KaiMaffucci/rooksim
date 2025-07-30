@@ -1,3 +1,5 @@
+# Made with assistance from Github Copilot 
+
 from game_logic import *
 from time import time
 import sys
@@ -53,7 +55,28 @@ def main():
         print("Papa and Hog wins: ", papa_hh_wins)
         print("Papa and Rabbit wins: ", papa_rr_wins)
         print("Hog and Rabbit wins: ", hh_rr_wins)
+    
+    # print partner wins percentage
+    total_wins = karapet_papa_wins + karapet_hh_wins + karapet_rr_wins + papa_hh_wins + papa_rr_wins + hh_rr_wins
+    if total_wins > 0:
+        karapet_papa_percentage = (karapet_papa_wins / total_wins) * 100
+        karapet_hh_percentage = (karapet_hh_wins / total_wins) * 100
+        karapet_rr_percentage = (karapet_rr_wins / total_wins) * 100
+        papa_hh_percentage = (papa_hh_wins / total_wins) * 100
+        papa_rr_percentage = (papa_rr_wins / total_wins) * 100
+        hh_rr_percentage = (hh_rr_wins / total_wins) * 100
 
+        print("\nPartner wins percentage:")
+        print(f"Karapet and Papa: {karapet_papa_percentage:.2f}%")
+        print(f"Karapet and Hog: {karapet_hh_percentage:.2f}%")
+        print(f"Karapet and Rabbit: {karapet_rr_percentage:.2f}%")
+        print(f"Papa and Hog: {papa_hh_percentage:.2f}%")
+        print(f"Papa and Rabbit: {papa_rr_percentage:.2f}%")
+        print(f"Hog and Rabbit: {hh_rr_percentage:.2f}%")
+    else:
+        print("\nNo partner wins recorded.")
+
+    # print total simulation time
     print("Total simulation time for", games_to_play, "games:", elapsed_time, "sec")
     print("Simulation time per game:", (elapsed_time / games_to_play) * 10**3, "ms")
 
@@ -111,10 +134,27 @@ def main():
     total_trimester_2_wins = sum(trimester_2_wins.values())
     total_trimester_3_wins = sum(trimester_3_wins.values())
 
+    # print percentage of wins for each player in total
+    print("\nTotal wins percentage:")
+    for player, wins in total_trimester_wins.items():
+        if total_trimesters_played > 0:
+            percentage = (wins / total_trimesters_played) * 100
+            print(f"{player} win percentage: {percentage:.2f}%")
+    print("\nTotal trimester 1 wins:", total_trimester_1_wins)
+    print("Total trimester 2 wins:", total_trimester_2_wins)
+    print("Total trimester 3 wins:", total_trimester_3_wins)
+
+    # print percentage of total trimester wins for each player
+    print("\nTotal trimester wins percentage:")
+    for player, wins in total_trimester_wins.items():
+        if total_trimesters_played > 0:
+            percentage = (wins / total_trimesters_played) * 100
+            print(f"{player} total trimester win percentage: {percentage:.2f}%")    
+
     # Print trimester wins
     print("\nTrimester 1 wins:")
     for player, wins in trimester_1_wins.items():
-        print(f"{player}: {wins}")
+        #print(f"{player}: {wins}")
         # calculate and print percentage of wins for each player in trimester 1
         if total_trimesters_played > 0:
             percentage = (wins / total_trimester_1_wins) * 100
@@ -122,7 +162,7 @@ def main():
     
     print("\nTrimester 2 wins:")
     for player, wins in trimester_2_wins.items():
-        print(f"{player}: {wins}")
+        #print(f"{player}: {wins}")
         # calculate and print percentage of wins for each player in trimester 2
         if total_trimesters_played > 0:
             percentage = (wins / total_trimester_2_wins) * 100
@@ -130,7 +170,7 @@ def main():
     
     print("\nTrimester 3 wins:")
     for player, wins in trimester_3_wins.items():
-        print(f"{player}: {wins}")
+        #print(f"{player}: {wins}")
         # calculate and print percentage of wins for each player in trimester 3
         if total_trimesters_played > 0:
             percentage = (wins / total_trimester_3_wins) * 100

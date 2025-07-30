@@ -1,4 +1,4 @@
-# TODO: this is insanely broken somehow, need to fix it
+# Made with assistance from Github Copilot 
 
 import math
 
@@ -93,8 +93,9 @@ if __name__ == "__main__":
     print(f"T3: Probability of drawing at least 7 high cards (10-14 + rook) in hand: {(prob_high_card_3*100):.2f}%")
 
     print("Papa comes for the hog")
-    print("T1: Papa is just as likely to have a high card as the hog.")
-    prob_papa = prob_range(d_0, t_0, d_r, h, 2)
-    print(f"T2: Probability of drawing at least 2 high cards (10-14 + rook) in hand: {(prob_papa*100):.2f}%")
+    prob_papa = prob_range(d_0, t_0, d_r, h, 1)
+    print(f"T1: Probability of drawing at least one high card (10-14 + rook) in hand: {(prob_papa*100):.2f}%")
+    prob_papa_2 = prob_range(d_0, t_0, d_r, h, 2)
+    print(f"T2: Probability of drawing at least 2 high cards (10-14 + rook) in hand: {(prob_papa_2*100):.2f}%")
     prob_papa_3 = prob_range(d_0, t_0, d_r, h, 4)
     print(f"T3: Probability of drawing at least 4 high cards (10-14 + rook) in hand: {(prob_papa_3*100):.2f}%")
