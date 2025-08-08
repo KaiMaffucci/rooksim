@@ -85,6 +85,13 @@ def main():
     trimester_3_wins = {"Karapet": 0, "Papa": 0, "HH": 0, "RR": 0}
     total_trimester_wins = {"Karapet": 0, "Papa": 0, "HH": 0, "RR": 0}
 
+    # read plays file, print last 13-7 lines
+    with open("plays.txt", "r") as f:
+        plays = f.readlines()
+        last_lines = plays[-13:] if len(plays) >= 13 else plays
+        for line in last_lines:
+            print(line.strip())
+
     # read plays file, print last 5 lines
     with open("plays.txt", "r") as f:
         plays = f.readlines()

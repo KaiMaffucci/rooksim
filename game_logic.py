@@ -373,6 +373,7 @@ class Game:
 
     # Initializes the game with players, scores, and files for output
     def __init__(self):
+
         self.games_played = 0
         self.tricks_played = 0
         self.p1 = Player()
@@ -389,10 +390,22 @@ class Game:
         self.leading_player = 0
         self.winning_bid = 0
         self.trump = ''
+
+        # Trimester win counts
         self.karapet_t1 = self.karapet_t2 = self.karapet_t3 = 0
         self.papa_t1 = self.papa_t2 = self.papa_t3 = 0
         self.hh_t1 = self.hh_t2 = self.hh_t3 = 0
         self.rr_t1 = self.rr_t2 = self.rr_t3 = 0
+
+        # Partner trimester wins
+        self.karapet_papa_t1 = self.karapet_papa_t2 = self.karapet_papa_t3 = 0
+        self.karapet_hh_t1 = self.karapet_hh_t2 = self.karapet_hh_t3 = 0
+        self.karapet_rr_t1 = self.karapet_rr_t2 = self.karapet_rr_t3 = 0
+        self.papa_hh_t1 = self.papa_hh_t2 = self.papa_hh_t3 = 0
+        self.papa_rr_t1 = self.papa_rr_t2 = self.papa_rr_t3 = 0
+        self.hh_rr_t1 = self.hh_rr_t2 = self.hh_rr_t3 = 0
+
+        # Create files for winners and plays
         with open("winners.txt", "w"), open("plays.txt", "w"):
             pass
         self.winner_file = open("winners.txt", "a")
@@ -489,7 +502,36 @@ class Game:
         elif name == "RR":
             setattr(self, f"rr_t{trimester}", getattr(self, f"rr_t{trimester}") + 1)
 
-        # Write to file
+        # Update partner trimester win counts
+        partner_player = [self.p1, self.p2, self.p3, self.p4][winner.partner - 1]
+        partner_name = partner_player.get_name()
+        
+        if name == "Karapet" and partner_name == "Papa" or name == "Papa" and partner_name == "Karapet":
+            self.karapet_papa_t1 += trimester == 1
+            self.karapet_papa_t2 += trimester == 2
+            self.karapet_papa_t3 += trimester == 3
+        elif name == "Karapet" and partner_name == "HH" or name == "HH" and partner_name == "Karapet":
+            self.karapet_hh_t1 += trimester == 1
+            self.karapet_hh_t2 += trimester == 2
+            self.karapet_hh_t3 += trimester == 3
+        elif name == "Karapet" and partner_name == "RR" or name == "RR" and partner_name == "Karapet":
+            self.karapet_rr_t1 += trimester == 1
+            self.karapet_rr_t2 += trimester == 2
+            self.karapet_rr_t3 += trimester == 3
+        elif name == "Papa" and partner_name == "HH" or name == "HH" and partner_name == "Papa":
+            self.papa_hh_t1 += trimester == 1
+            self.papa_hh_t2 += trimester == 2
+            self.papa_hh_t3 += trimester == 3
+        elif name == "Papa" and partner_name == "RR" or name == "RR" and partner_name == "Papa":
+            self.papa_rr_t1 += trimester == 1
+            self.papa_rr_t2 += trimester == 2
+            self.papa_rr_t3 += trimester == 3
+        elif name == "HH" and partner_name == "RR" or name == "RR" and partner_name == "HH":
+            self.hh_rr_t1 += trimester == 1
+            self.hh_rr_t2 += trimester == 2
+            self.hh_rr_t3 += trimester == 3
+
+        # Write trick to file
         for idx, p in enumerate([self.p1, self.p2, self.p3, self.p4], 1):
             self.plays_file.write(f"P{idx} hand: {p.hand}\n")
         self.plays_file.write(f"Leader: P{self.leading_player}\n")
@@ -584,6 +626,15 @@ class Game:
 
     # Ends the game, writing final trimester data and closing files
     def end(self):
+        self.plays_file.write("Partner trick trimester data:\n")
+        self.plays_file.write(f"Karapet-Papa: {self.karapet_papa_t1} {self.karapet_papa_t2} {self.karapet_papa_t3}\n")
+        self.plays_file.write(f"Karapet-HH: {self.karapet_hh_t1} {self.karapet_hh_t2} {self.karapet_hh_t3}\n")
+        self.plays_file.write(f"Karapet-RR: {self.karapet_rr_t1} {self.karapet_rr_t2} {self.karapet_rr_t3}\n")
+        self.plays_file.write(f"Papa-HH: {self.papa_hh_t1} {self.papa_hh_t2} {self.papa_hh_t3}\n")
+        self.plays_file.write(f"Papa-RR: {self.papa_rr_t1} {self.papa_rr_t2} {self.papa_rr_t3}\n")
+        self.plays_file.write(f"HH-RR: {self.hh_rr_t1} {self.hh_rr_t2} {self.hh_rr_t3}\n")
+        self.plays_file.write("\n")
+
         self.plays_file.write("Trick trimester data:\n")
         self.plays_file.write(f"Karapet: {self.karapet_t1} {self.karapet_t2} {self.karapet_t3}\n")
         self.plays_file.write(f"Papa: {self.papa_t1} {self.papa_t2} {self.papa_t3}\n")
