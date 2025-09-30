@@ -1,74 +1,66 @@
 Game 0
 This game's winners:
-Papa
-RR
---------------------------------------------------
-This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+HH
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+HH
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
---------------------------------------------------
-This game's winners:
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
@@ -76,180 +68,164 @@ Karapet
 RR
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Papa
-RR
---------------------------------------------------
-This game's winners:
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
-RR
---------------------------------------------------
-This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-RR
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
---------------------------------------------------
-This game's winners:
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
---------------------------------------------------
-This game's winners:
-Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+RR
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+HH
 --------------------------------------------------
 This game's winners:
-Karapet
+HH
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 RR
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+HH
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+RR
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -261,66 +237,62 @@ HH
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Papa
-RR
+HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+Karapet
+RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+HH
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
---------------------------------------------------
-This game's winners:
-Karapet
 RR
 --------------------------------------------------
 This game's winners:
@@ -329,95 +301,87 @@ RR
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
---------------------------------------------------
-This game's winners:
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
---------------------------------------------------
-This game's winners:
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
+HH
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 RR
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+Karapet
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
@@ -432,23 +396,23 @@ Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
@@ -456,32 +420,28 @@ Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
-HH
---------------------------------------------------
-This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -489,18 +449,22 @@ RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
+RR
 HH
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Papa
+HH
+Karapet
+--------------------------------------------------
+This game's winners:
+Karapet
 RR
 --------------------------------------------------
 This game's winners:
@@ -508,48 +472,44 @@ Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
---------------------------------------------------
-This game's winners:
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 RR
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Papa
@@ -560,116 +520,148 @@ Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+HH
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
+HH
+--------------------------------------------------
+This game's winners:
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
+RR
 Papa
+--------------------------------------------------
+This game's winners:
+Karapet
+RR
+--------------------------------------------------
+This game's winners:
+RR
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+HH
+RR
+--------------------------------------------------
+This game's winners:
 RR
+HH
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
+HH
 RR
 --------------------------------------------------
 This game's winners:
 Karapet
+Papa
+--------------------------------------------------
+This game's winners:
 RR
+HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
+--------------------------------------------------
+This game's winners:
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
+--------------------------------------------------
+This game's winners:
 HH
+RR
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
+--------------------------------------------------
+This game's winners:
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -685,59 +677,71 @@ HH
 --------------------------------------------------
 This game's winners:
 Karapet
+Papa
+--------------------------------------------------
+This game's winners:
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
+Papa
+--------------------------------------------------
+This game's winners:
 HH
+RR
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-RR
+--------------------------------------------------
+This game's winners:
+HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+HH
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
 Papa
@@ -745,11 +749,15 @@ HH
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
+Karapet
+--------------------------------------------------
+This game's winners:
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -760,23 +768,31 @@ Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+HH
 RR
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+Karapet
+RR
 --------------------------------------------------
 This game's winners:
 Karapet
+RR
+--------------------------------------------------
+This game's winners:
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
+--------------------------------------------------
+This game's winners:
+RR
 HH
 --------------------------------------------------
 This game's winners:
@@ -784,11 +800,11 @@ Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
@@ -796,32 +812,28 @@ Papa
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
---------------------------------------------------
-This game's winners:
 Papa
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -829,62 +841,78 @@ RR
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
+HH
 Papa
+--------------------------------------------------
+This game's winners:
 RR
+Papa
+--------------------------------------------------
+This game's winners:
+HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+HH
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
+--------------------------------------------------
+This game's winners:
+Papa
+RR
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Papa
+Karapet
+--------------------------------------------------
+This game's winners:
+RR
 HH
 --------------------------------------------------
 This game's winners:
@@ -893,98 +921,102 @@ HH
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
+--------------------------------------------------
+This game's winners:
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 RR
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+RR
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Papa
+RR
 HH
 --------------------------------------------------
 This game's winners:
@@ -992,80 +1024,76 @@ Papa
 RR
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
-HH
+Papa
+RR
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
+HH
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
+RR
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+HH
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
---------------------------------------------------
-This game's winners:
 Papa
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
@@ -1080,8 +1108,8 @@ Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
 Papa
@@ -1093,63 +1121,59 @@ RR
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-HH
---------------------------------------------------
-This game's winners:
-Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
@@ -1160,32 +1184,32 @@ Papa
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+HH
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+HH
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-RR
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -1197,39 +1221,35 @@ HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
---------------------------------------------------
-This game's winners:
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
-RR
+HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Papa
@@ -1240,20 +1260,24 @@ Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Papa
+--------------------------------------------------
+This game's winners:
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -1261,27 +1285,23 @@ HH
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-HH
---------------------------------------------------
-This game's winners:
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+HH
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
@@ -1289,11 +1309,11 @@ HH
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -1304,16 +1324,16 @@ Karapet
 HH
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Papa
-RR
+Karapet
+HH
 --------------------------------------------------
 This game's winners:
 Papa
@@ -1321,26 +1341,30 @@ RR
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+HH
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
+--------------------------------------------------
+This game's winners:
+Karapet
 RR
 --------------------------------------------------
 This game's winners:
@@ -1348,84 +1372,80 @@ Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+Karapet
+RR
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-RR
---------------------------------------------------
-This game's winners:
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
@@ -1436,7 +1456,7 @@ Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
@@ -1444,24 +1464,20 @@ Karapet
 RR
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
---------------------------------------------------
-This game's winners:
-Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+RR
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -1469,15 +1485,23 @@ HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
+--------------------------------------------------
+This game's winners:
+Karapet
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
+RR
+--------------------------------------------------
+This game's winners:
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
@@ -1485,7 +1509,7 @@ HH
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+HH
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -1493,7 +1517,7 @@ HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -1501,18 +1525,18 @@ RR
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+HH
 --------------------------------------------------
 This game's winners:
-Papa
+RR
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+HH
 RR
 --------------------------------------------------
 This game's winners:
@@ -1521,74 +1545,62 @@ RR
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
---------------------------------------------------
-This game's winners:
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 RR
---------------------------------------------------
-This game's winners:
 Papa
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
---------------------------------------------------
-This game's winners:
 Papa
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Papa
+RR
 HH
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+HH
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 RR
 --------------------------------------------------
 This game's winners:
@@ -1596,235 +1608,251 @@ Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 RR
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+RR
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 RR
---------------------------------------------------
-This game's winners:
-Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+HH
 --------------------------------------------------
 This game's winners:
-Papa
+HH
 RR
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+HH
 RR
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
+--------------------------------------------------
+This game's winners:
+HH
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
+--------------------------------------------------
+This game's winners:
 HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
+--------------------------------------------------
+This game's winners:
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
+HH
+--------------------------------------------------
+This game's winners:
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
+RR
 Papa
+--------------------------------------------------
+This game's winners:
+HH
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
@@ -1837,7 +1865,7 @@ HH
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
@@ -1845,163 +1873,175 @@ HH
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
-HH
+RR
+Papa
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
+--------------------------------------------------
+This game's winners:
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
-RR
+HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+RR
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
+--------------------------------------------------
+This game's winners:
+Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
-RR
+HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 RR
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-RR
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
+RR
+Karapet
+--------------------------------------------------
+This game's winners:
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
@@ -2013,50 +2053,54 @@ HH
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+RR
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
+Karapet
+--------------------------------------------------
+This game's winners:
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Papa
+HH
 RR
 --------------------------------------------------
 This game's winners:
@@ -2064,7 +2108,7 @@ Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 RR
 --------------------------------------------------
 This game's winners:
@@ -2077,58 +2121,54 @@ RR
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+HH
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
---------------------------------------------------
-This game's winners:
-Papa
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 RR
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
+HH
 RR
 --------------------------------------------------
 This game's winners:
@@ -2136,12 +2176,12 @@ Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
@@ -2152,140 +2192,140 @@ Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
+--------------------------------------------------
+This game's winners:
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Papa
+HH
 RR
 --------------------------------------------------
 This game's winners:
 Karapet
+HH
+--------------------------------------------------
+This game's winners:
+HH
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+RR
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
---------------------------------------------------
-This game's winners:
-Karapet
-RR
---------------------------------------------------
-This game's winners:
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
-HH
+RR
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
---------------------------------------------------
-This game's winners:
-Karapet
 HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
+--------------------------------------------------
+This game's winners:
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -2296,16 +2336,16 @@ Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+HH
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
@@ -2316,71 +2356,63 @@ Papa
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
---------------------------------------------------
-This game's winners:
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Papa
+HH
 RR
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
---------------------------------------------------
-This game's winners:
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
@@ -2389,19 +2421,15 @@ HH
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
+RR
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
---------------------------------------------------
-This game's winners:
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -2409,238 +2437,226 @@ RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
---------------------------------------------------
-This game's winners:
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
-RR
+Papa
+HH
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+HH
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
---------------------------------------------------
-This game's winners:
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
---------------------------------------------------
-This game's winners:
-Karapet
 RR
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
-RR
+HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
+HH
 RR
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+HH
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
---------------------------------------------------
-This game's winners:
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
-RR
+HH
+Karapet
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
+HH
 Papa
+--------------------------------------------------
+This game's winners:
 RR
+HH
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 RR
 --------------------------------------------------
 This game's winners:
@@ -2648,12 +2664,12 @@ Karapet
 HH
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
 Papa
@@ -2661,123 +2677,131 @@ RR
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
---------------------------------------------------
-This game's winners:
-Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
+RR
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
+RR
+--------------------------------------------------
+This game's winners:
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+HH
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
+HH
 Papa
+--------------------------------------------------
+This game's winners:
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
+RR
+--------------------------------------------------
+This game's winners:
+Papa
 HH
 --------------------------------------------------
 This game's winners:
+RR
 Papa
+--------------------------------------------------
+This game's winners:
 RR
+Papa
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 RR
---------------------------------------------------
-This game's winners:
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -2792,192 +2816,196 @@ Papa
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
---------------------------------------------------
-This game's winners:
-Papa
 HH
---------------------------------------------------
-This game's winners:
-Papa
-RR
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
-HH
+RR
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
+RR
+--------------------------------------------------
+This game's winners:
 HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
-HH
+Papa
+RR
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+HH
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
+HH
 Papa
+--------------------------------------------------
+This game's winners:
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
+--------------------------------------------------
+This game's winners:
+RR
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
-RR
+HH
+Karapet
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -2985,38 +3013,38 @@ HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+HH
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+RR
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
@@ -3025,19 +3053,23 @@ RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
+HH
 Papa
+--------------------------------------------------
+This game's winners:
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+HH
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -3048,171 +3080,167 @@ Karapet
 HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Papa
+--------------------------------------------------
+This game's winners:
 HH
+Karapet
+--------------------------------------------------
+This game's winners:
+RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
---------------------------------------------------
-This game's winners:
-Papa
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
---------------------------------------------------
-This game's winners:
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
---------------------------------------------------
-This game's winners:
 Papa
-RR
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
@@ -3221,50 +3249,46 @@ HH
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
-HH
+RR
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
+HH
 Papa
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
---------------------------------------------------
-This game's winners:
-Papa
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
@@ -3272,116 +3296,116 @@ Papa
 RR
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
---------------------------------------------------
-This game's winners:
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+Karapet
+RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-HH
---------------------------------------------------
-This game's winners:
-Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+RR
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
+Karapet
+--------------------------------------------------
+This game's winners:
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+RR
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
+HH
 Papa
+--------------------------------------------------
+This game's winners:
 HH
+RR
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -3389,15 +3413,15 @@ HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
@@ -3405,38 +3429,38 @@ HH
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
-HH
+Papa
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+HH
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
@@ -3444,36 +3468,36 @@ Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
@@ -3481,174 +3505,174 @@ HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+HH
 RR
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 RR
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
-RR
+Papa
+HH
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+RR
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+HH
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
@@ -3657,50 +3681,38 @@ RR
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
---------------------------------------------------
-This game's winners:
-Papa
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
---------------------------------------------------
-This game's winners:
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
---------------------------------------------------
-This game's winners:
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
+HH
 RR
 --------------------------------------------------
 This game's winners:
@@ -3708,35 +3720,31 @@ Karapet
 HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
---------------------------------------------------
-This game's winners:
 Papa
-HH
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Karapet
+Papa
 HH
 --------------------------------------------------
 This game's winners:
@@ -3744,12 +3752,12 @@ Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+Karapet
+RR
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Papa
@@ -3757,91 +3765,91 @@ HH
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+HH
 --------------------------------------------------
 This game's winners:
+Papa
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
+--------------------------------------------------
+This game's winners:
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Karapet
 RR
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+RR
+Karapet
 --------------------------------------------------
 This game's winners:
-Papa
+Karapet
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
-HH
+RR
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
-RR
+HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
 RR
---------------------------------------------------
-This game's winners:
-Karapet
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
+RR
 HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -3849,91 +3857,83 @@ RR
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+HH
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
 Papa
 HH
 --------------------------------------------------
 This game's winners:
-Papa
+HH
 RR
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+RR
 --------------------------------------------------
 This game's winners:
-Papa
+RR
 HH
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+Karapet
+RR
 --------------------------------------------------
 This game's winners:
 Papa
 RR
 --------------------------------------------------
 This game's winners:
-Papa
-HH
+RR
+Karapet
 --------------------------------------------------
 This game's winners:
 Papa
-HH
---------------------------------------------------
-This game's winners:
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Karapet
-HH
+Papa
 --------------------------------------------------
 This game's winners:
-Papa
 RR
+HH
 --------------------------------------------------
 This game's winners:
 Papa
-HH
+Karapet
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
 Karapet
 RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
---------------------------------------------------
-This game's winners:
 Papa
-HH
 --------------------------------------------------
 This game's winners:
+Karapet
 Papa
-RR
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Karapet
-HH
 --------------------------------------------------
 This game's winners:
 Papa
@@ -3945,15 +3945,19 @@ RR
 --------------------------------------------------
 This game's winners:
 Papa
-RR
+HH
 --------------------------------------------------
 This game's winners:
-Papa
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
+HH
 Papa
+--------------------------------------------------
+This game's winners:
 RR
+HH
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -3964,20 +3968,20 @@ Papa
 HH
 --------------------------------------------------
 This game's winners:
+HH
 Karapet
-RR
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Papa
 --------------------------------------------------
 This game's winners:
+RR
 Papa
-HH
 --------------------------------------------------
 This game's winners:
-Karapet
 HH
+Karapet
 --------------------------------------------------
 This game's winners:
 Karapet
@@ -3985,15 +3989,11 @@ RR
 --------------------------------------------------
 This game's winners:
 Papa
-HH
---------------------------------------------------
-This game's winners:
-Karapet
 RR
 --------------------------------------------------
 This game's winners:
 Karapet
-RR
+HH
 --------------------------------------------------
 This game's winners:
 Papa
